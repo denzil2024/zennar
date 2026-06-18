@@ -2,7 +2,7 @@ function App() {
   return (
     <div className="page">
       <header className="nav">
-        <span className="brand">Zennar</span>
+        <span className="brand">ZENNARA</span>
         <nav>
           <a href="#services">Services</a>
           <a href="#about">About</a>
@@ -12,10 +12,11 @@ function App() {
 
       <main>
         <section className="hero">
-          <h1>Build something people love.</h1>
+          <h1>Property and facility management, elevated.</h1>
           <p>
-            A fast, modern foundation for your next website — ready to deploy and
-            ready to grow.
+            East Africa's eco-responsible property and facility management
+            partner — institutional-grade operations with a genuine commitment
+            to sustainable, green buildings across Nairobi and beyond.
           </p>
           <a className="cta" href="#contact">
             Get in touch
@@ -24,22 +25,25 @@ function App() {
 
         <section id="services" className="grid">
           <article>
-            <h3>Design</h3>
-            <p>Clean, responsive interfaces that work on every device.</p>
+            <h3>Property Management</h3>
+            <p>Comprehensive residential and commercial property management.</p>
           </article>
           <article>
-            <h3>Development</h3>
-            <p>Reliable, maintainable code built on a modern stack.</p>
+            <h3>Facility Management</h3>
+            <p>Smart building operations, maintenance, and engineering.</p>
           </article>
           <article>
-            <h3>Deployment</h3>
-            <p>Continuous delivery through GitHub, Railway, and Cloudflare.</p>
+            <h3>Eco FM Services</h3>
+            <p>Green-certified cleaning, energy, and waste management.</p>
           </article>
         </section>
       </main>
 
       <footer id="contact">
-        <p>© {new Date().getFullYear()} Zennar. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()} ZENNARA Property &amp; Facility
+          Management Ltd. All rights reserved. Nairobi, Kenya.
+        </p>
       </footer>
     </div>
   )
