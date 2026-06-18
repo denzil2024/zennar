@@ -1,4 +1,4 @@
-/* ZENNARA design tokens — source of truth: docs/zennar-deck.html (Developer Brief) */
+/* ZENNARA design tokens. Source of truth: docs/zennar-deck.html (Developer Brief) */
 :root {
   /* Neutrals */
   --zennara-black: #080808;
@@ -10,13 +10,13 @@
   --zennara-off: #faf8f4;
   --zennara-white: #ffffff;
 
-  /* Gold — primary accent, used sparingly */
+  /* Gold: primary accent, used sparingly */
   --zennara-gold: #c9a030;
   --zennara-gold-l: #e2b84a;
   --zennara-gold-d: #9a7520;
   --zennara-gold-pale: rgba(201, 160, 48, 0.08);
 
-  /* Eco green — eco / sustainability contexts ONLY */
+  /* Eco green: eco / sustainability contexts ONLY */
   --zennara-eco: #2d7a4f;
   --zennara-eco-l: #3baa6a;
   --zennara-eco-pale: #a8d5b8;

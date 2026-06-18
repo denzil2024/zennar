@@ -11,7 +11,7 @@ export default function ServicesPage() {
       />
       <Services
         title="Our"
-        subtitle="ZENNARA delivers institutional-grade property and facility management across Nairobi — with our Eco FM service line as a core differentiator."
+        subtitle="ZENNARA delivers institutional-grade property and facility management across Nairobi, with our Eco FM service line as a core differentiator."
       />
       <EcoStrip />
     </>

@@ -43,7 +43,7 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
-          <div className="map-placeholder">Google Map — Nairobi (to be embedded)</div>
+          <div className="map-placeholder">Google Map · Nairobi (to be embedded)</div>
         </div>
       </section>
     </>

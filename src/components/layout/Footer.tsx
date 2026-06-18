@@ -15,7 +15,8 @@ export default function Footer() {
             </div>
             <p className="ft-desc">
               East Africa's foremost eco-responsible property and facility
-              management company — institutional-grade service with a commitment
+              management company, delivering institutional-grade service with a
+              commitment
               to sustainability.
             </p>
           </div>

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="ZENNARA — Property & Facility Management"
+        title="ZENNARA Property & Facility Management"
         description="East Africa's eco-responsible property and facility management partner, delivering institutional-grade operations across Nairobi and beyond."
       />
       <Hero />

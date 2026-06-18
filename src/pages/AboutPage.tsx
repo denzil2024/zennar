@@ -16,7 +16,7 @@ export default function AboutPage() {
           </h2>
           <p className="ss">
             ZENNARA Property &amp; Facility Management is East Africa's premier
-            eco-responsible property and facility management company —
+            eco-responsible property and facility management company,
             combining institutional rigour with deep Kenyan market expertise and
             a genuine commitment to green building operations.
           </p>

@@ -1,4 +1,4 @@
-// Static site content for ZENNARA — replaced by Sanity CMS in a later milestone.
+// Static site content for ZENNARA. All content is code-managed (no CMS).
 
 export type Service = { ico: string; t: string; d: string; eco: boolean }
 export type Property = {
@@ -62,7 +62,7 @@ export const VALUES: { label: string; eco: boolean }[] = [
 
 // Centralised site config (contact, WhatsApp). Swap in real values when supplied.
 export const SITE = {
-  whatsapp: '254700000000', // placeholder Nairobi number — replace with client's
+  whatsapp: '254700000000', // placeholder Nairobi number; replace with client's
   email: 'hello@zennara.co.ke',
   city: 'Nairobi, Kenya',
 }

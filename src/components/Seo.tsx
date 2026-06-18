@@ -6,7 +6,7 @@ type SeoProps = {
   noindex?: boolean
 }
 
-const SUFFIX = 'ZENNARA — Property & Facility Management'
+const SUFFIX = 'ZENNARA Property & Facility Management'
 
 export default function Seo({ title, description, noindex }: SeoProps) {
   return (

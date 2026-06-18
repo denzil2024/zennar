@@ -7,7 +7,7 @@ export default function EcoPage() {
     <>
       <Seo
         title="Eco FM"
-        description="ZENNARA's eco-responsible facility management — energy and water efficiency, waste diversion, green procurement, and carbon reporting."
+        description="ZENNARA's eco-responsible facility management: energy and water efficiency, waste diversion, green procurement, and carbon reporting."
       />
       <EcoSection />
       <StatsBar />

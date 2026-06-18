@@ -19,7 +19,8 @@ export default function Hero() {
         </span>
         <p className="h-desc">
           East Africa's eco-responsible property and facility management
-          partner — institutional-grade operations with a genuine commitment to
+          partner, delivering institutional-grade operations with a genuine
+          commitment to
           sustainable, green buildings across Nairobi and beyond.
         </p>
         <div className="h-btns">

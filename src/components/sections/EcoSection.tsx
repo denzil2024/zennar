@@ -9,7 +9,7 @@ export default function EcoSection() {
           Eco <span className="eco">Facility</span> Management
         </h2>
         <p className="ss">
-          Sustainability is built into every building we operate — from energy
+          Sustainability is built into every building we operate, from energy
           and water efficiency to waste diversion and carbon reporting. A live
           eco data dashboard is on our roadmap.
         </p>

@@ -21,6 +21,9 @@ pnpm-debug.log*
 # Large reference asset (kept locally, not committed)
 docs/zennar-deck.html
 
+# Local visual-QA screenshots
+.shots/
+
 # Editor / OS
 .vscode/*
 !.vscode/extensions.json

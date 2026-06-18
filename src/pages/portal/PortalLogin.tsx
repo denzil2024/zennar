@@ -30,7 +30,7 @@ export default function PortalLogin() {
             </button>
           </form>
           <p className="cc-note" style={{ marginTop: 16 }}>
-            Authentication backend is wired up in a later milestone — this is a
+            Authentication backend is wired up in a later milestone. This is a
             preview of the portal entry point.
           </p>
         </div>
