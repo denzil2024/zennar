@@ -1,0 +1,35 @@
+/* ZENNARA design tokens — source of truth: docs/zennar-deck.html (Developer Brief) */
+:root {
+  /* Neutrals */
+  --zennara-black: #080808;
+  --zennara-charcoal: #181818;
+  --zennara-card: #222222;
+  --zennara-mid: #2a2a2a;
+  --zennara-platinum: #888888;
+  --zennara-lgrey: #bbbbbb;
+  --zennara-off: #faf8f4;
+  --zennara-white: #ffffff;
+
+  /* Gold — primary accent, used sparingly */
+  --zennara-gold: #c9a030;
+  --zennara-gold-l: #e2b84a;
+  --zennara-gold-d: #9a7520;
+  --zennara-gold-pale: rgba(201, 160, 48, 0.08);
+
+  /* Eco green — eco / sustainability contexts ONLY */
+  --zennara-eco: #2d7a4f;
+  --zennara-eco-l: #3baa6a;
+  --zennara-eco-pale: #a8d5b8;
+  --zennara-eco-d: #1d5235;
+  --zennara-eco-glow: rgba(45, 122, 79, 0.12);
+  --zennara-eco-b: rgba(45, 122, 79, 0.28);
+
+  /* Borders */
+  --zennara-bd: rgba(201, 160, 48, 0.18);
+  --zennara-bde: rgba(201, 160, 48, 0.08);
+
+  /* Type families */
+  --fd: 'Cormorant Garamond', serif; /* display / headlines / property names */
+  --fc: 'Barlow Condensed', sans-serif; /* labels / nav / buttons / UI */
+  --fb: 'Barlow', sans-serif; /* body */
+}
