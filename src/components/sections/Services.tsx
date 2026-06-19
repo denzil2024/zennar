@@ -1,4 +1,5 @@
 import { SERVICES } from '../../data/content'
+import Reveal from '../Reveal'
 
 type Props = {
   count?: number
@@ -17,21 +18,23 @@ export default function Services({
   return (
     <section id="services" style={background ? { background } : undefined}>
       <div className="wrap">
-        <div className="sl">Our Capabilities</div>
-        <h2 className="st">
-          {title} <em>Services</em>
-        </h2>
-        <p className="ss">{subtitle}</p>
-        <div className="rule" />
-        <div className="svc-grid">
-          {items.map((s) => (
-            <div className={`svc ${s.eco ? 'eco' : ''}`} key={s.t}>
-              <div className="svc-ico">{s.ico}</div>
-              <div className="svc-t">{s.t}</div>
-              <div className="svc-d">{s.d}</div>
-            </div>
-          ))}
-        </div>
+        <Reveal>
+          <div className="sl">Our Capabilities</div>
+          <h2 className="st">
+            {title} <em>Services</em>
+          </h2>
+          <p className="ss">{subtitle}</p>
+          <div className="rule" />
+          <div className="svc-grid">
+            {items.map((s) => (
+              <div className={`svc ${s.eco ? 'eco' : ''}`} key={s.t}>
+                <div className="svc-ico">{s.ico}</div>
+                <div className="svc-t">{s.t}</div>
+                <div className="svc-d">{s.d}</div>
+              </div>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   )

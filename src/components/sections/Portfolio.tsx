@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PORTFOLIO } from '../../data/content'
+import Reveal from '../Reveal'
 
 type Props = { background?: string; viewAll?: boolean }
 
@@ -10,25 +11,26 @@ export default function Portfolio({ background, viewAll }: Props) {
       style={{ background: background ?? 'var(--zennara-charcoal)' }}
     >
       <div className="wrap">
-        <div className="port-head">
-          <div>
-            <div className="sl">Managed Portfolio</div>
-            <h2 className="st">
-              Properties Under <em>Management</em>
-            </h2>
+        <Reveal>
+          <div className="port-head">
+            <div>
+              <div className="sl">Managed Portfolio</div>
+              <h2 className="st">
+                Properties Under <em>Management</em>
+              </h2>
+            </div>
+            {viewAll && (
+              <Link className="view-all" to="/portfolio">
+                View All →
+              </Link>
+            )}
           </div>
-          {viewAll && (
-            <Link className="view-all" to="/portfolio">
-              View All →
-            </Link>
-          )}
-        </div>
-        <p className="ss">
-          A selection of the commercial and residential properties we operate
-          across Nairobi.
-        </p>
-        <div className="rule" />
-        <div className="port-grid">
+          <p className="ss">
+            A selection of the commercial and residential properties we operate
+            across Nairobi.
+          </p>
+          <div className="rule" />
+          <div className="port-grid">
           {PORTFOLIO.map((p) => (
             <div className="pc" key={p.nm}>
               <div className="pc-img">
@@ -47,7 +49,8 @@ export default function Portfolio({ background, viewAll }: Props) {
               </div>
             </div>
           ))}
-        </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   )
