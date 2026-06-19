@@ -70,25 +70,26 @@ a {
   gap: 14px;
 }
 .theme-toggle {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background: none;
-  border: 1px solid var(--zennara-bd);
-  color: var(--text-soft);
+  border: none;
+  border-radius: 50%;
+  color: var(--text-muted);
   cursor: pointer;
-  transition: 0.2s;
+  transition: color 0.2s, background 0.2s;
 }
 .theme-toggle:hover {
   color: var(--zennara-gold);
-  border-color: var(--zennara-gold);
+  background: var(--zennara-gold-pale);
 }
 .theme-toggle svg {
-  width: 18px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
 }
 .wordmark {
   font: 700 27px/1 var(--fd);
@@ -99,8 +100,19 @@ a {
   color: var(--zennara-gold);
 }
 .wordmark .logo-img {
-  height: 30px;
+  height: 56px;
   width: auto;
+}
+.logo-dark {
+  display: block;
+}
+.logo-light {
+  display: none;
+}
+:root[data-theme='light'] .logo-dark {
+  display: none;
+}
+:root[data-theme='light'] .logo-light {
   display: block;
 }
 .eco-live {
@@ -481,7 +493,15 @@ section {
   align-items: center;
   gap: 8px;
   z-index: 2;
-  animation: up 0.8s ease 1s both;
+  animation: fadein 0.8s ease 1s both;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .h-scroll-t {
   font: 600 9px/1 var(--fc);
@@ -707,9 +727,8 @@ section {
   color: var(--zennara-gold);
 }
 .ft-wordmark .logo-img {
-  height: 36px;
+  height: 52px;
   width: auto;
-  display: block;
 }
 .ft-eco-b {
   display: inline-flex;
@@ -819,6 +838,19 @@ section {
   .eco-live {
     display: none;
   }
+  .wordmark .logo-img {
+    height: 34px;
+  }
+  .nav-cta-bar {
+    display: none;
+  }
+  .nlinks .nav-cta-menu {
+    display: block;
+    margin-top: 16px;
+    text-align: center;
+    padding: 13px;
+    font-size: 11px;
+  }
   .wrap {
     padding: 0 24px;
   }
@@ -845,5 +877,24 @@ section {
   }
   .h-desc {
     font-size: 16px;
+  }
+  .h-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .h-btns .btn-g,
+  .h-btns .btn-e,
+  .h-btns .btn-o {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  .epills {
+    justify-content: center;
+  }
+  .estrip {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }

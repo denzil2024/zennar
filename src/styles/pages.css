@@ -16,6 +16,10 @@
 .nav-cta:hover {
   background: var(--zennara-eco-l);
 }
+/* The in-menu CTA only shows in the mobile dropdown (see responsive rules). */
+.nav-cta-menu {
+  display: none;
+}
 
 /* eco rule + large eco pills */
 .erule {
@@ -409,5 +413,11 @@
   .p-main,
   .blog-grid {
     grid-template-columns: 1fr;
+  }
+  .port-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
   }
 }

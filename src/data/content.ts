@@ -32,9 +32,9 @@ export const SERVICES: Service[] = [
 ]
 
 export const PORTFOLIO: Property[] = [
-  { ico: '🏙️', dist: 'Under Management', nm: 'Pinnacle Business Park', addr: '📍 Westlands', badge: 'Managed' },
-  { ico: '🏢', dist: 'Under Management', nm: 'UN Crescent Residences', addr: '📍 Gigiri', badge: 'Managed' },
-  { ico: '🌿', dist: 'Eco Showcase', nm: 'Karen Eco Business Hub', addr: '📍 Karen', badge: 'Eco Hub' },
+  { ico: '🏙️', dist: 'Under Management', nm: 'Pinnacle Business Park', addr: '📍 Westlands', badge: 'Managed', img: '/properties/pinnacle-business-park.jpg' },
+  { ico: '🏢', dist: 'Under Management', nm: 'UN Crescent Residences', addr: '📍 Gigiri', badge: 'Managed', img: '/properties/un-crescent-residences.jpg' },
+  { ico: '🌿', dist: 'Eco Showcase', nm: 'Karen Eco Business Hub', addr: '📍 Karen', badge: 'Eco Hub', img: '/properties/karen-eco-business-hub.jpg' },
 ]
 
 export const STATS: Stat[] = [
@@ -104,6 +104,8 @@ export const SITE = {
 // Brand assets. Leave blank to use the text/placeholder fallbacks; set the path
 // (file in /public) to swap in the real asset everywhere at once.
 export const ASSETS = {
-  logo: '', // e.g. '/logo.svg' (white/light version for the dark nav and footer)
+  // Logo swaps by theme automatically. Leave both blank for the text fallback.
+  logoDark: '/zennara-nav-dark.svg', // shown in dark mode (icon + ZENNARA + ZEN F&P)
+  logoLight: '/zennara-nav-light.svg', // shown in light mode
   heroImage: '', // e.g. '/hero.jpg' (large landscape building photo)
 }

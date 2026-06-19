@@ -31,11 +31,14 @@ export default function Nav() {
             {l.label}
           </NavLink>
         ))}
+        <Link to="/contact" className="nav-cta nav-cta-menu" onClick={close}>
+          Get FM Quote
+        </Link>
       </div>
 
       <div className="nav-end">
         <ThemeToggle />
-        <Link to="/contact" className="nav-cta" onClick={close}>
+        <Link to="/contact" className="nav-cta nav-cta-bar" onClick={close}>
           Get FM Quote
         </Link>
         <button

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 16 262 70" role="img">
+  <title>ZENNARA — nav lockup (light)</title>
+  <path d="M 20,22 L 70,22 L 70,34 L 32,67 L 70,67 L 70,79 L 20,79 L 20,67 L 58,34 L 20,34 Z" fill="#166534"/>
+  <polygon points="20,22 70,22 70,34 58,34" fill="#22c55e" opacity="0.26"/>
+  <polygon points="32,67 70,67 70,79 20,79 20,67" fill="#0e3c1c" opacity="0.38"/>
+  <line x1="62" y1="36" x2="27" y2="65" stroke="#166534" stroke-width="0.85" opacity="0.28"/>
+  <text x="88" y="48" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="3" fill="#111111">ZENNARA</text>
+  <rect x="88" y="55" width="158" height="0.75" fill="#166534"/>
+  <text x="88" y="69" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" letter-spacing="3" fill="#166534">ZEN F&amp;P</text>
+</svg>

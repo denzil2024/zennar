@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img">
+  <title>ZENNARA LTD — Z Icon Gold Black</title>
+  <desc>Z-Prism app icon, gold on black.</desc>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="none" stroke="#2a1e00" stroke-width="0.8"/>
+  <path d="M 27,24 L 73,24 L 73,35 L 38,65 L 73,65 L 73,76 L 27,76 L 27,65 L 62,35 L 27,35 Z" fill="#ca8a04"/>
+  <polygon points="27,24 73,24 73,35 62,35" fill="#fbbf24" opacity="0.35"/>
+  <polygon points="38,65 73,65 73,76 27,76 27,65" fill="#7a4e00" opacity="0.50"/>
+  <line x1="65" y1="37" x2="33" y2="63" stroke="#fbbf24" stroke-width="0.85" opacity="0.22"/>
+</svg>
