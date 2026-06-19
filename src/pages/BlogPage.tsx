@@ -23,13 +23,22 @@ export default function BlogPage() {
           <div className="blog-grid">
             {POSTS.map((p) => (
               <Link className="blog-card" to={`/blog/${p.slug}`} key={p.slug}>
-                <div className="blog-cat">{p.category}</div>
-                <h3 className="blog-title">{p.title}</h3>
-                <div className="blog-meta">
-                  {formatDate(p.date)} · {p.readMins} min read
+                <div className="blog-cover">
+                  {p.cover ? (
+                    <img src={p.cover} alt={p.title} loading="lazy" />
+                  ) : (
+                    <span className="blog-cover-ico">{p.icon}</span>
+                  )}
+                  <span className="blog-cover-cat">{p.category}</span>
                 </div>
-                <p className="blog-excerpt">{p.excerpt}</p>
-                <span className="blog-more">Read →</span>
+                <div className="blog-card-body">
+                  <h3 className="blog-title">{p.title}</h3>
+                  <div className="blog-meta">
+                    {formatDate(p.date)} · {p.readMins} min read
+                  </div>
+                  <p className="blog-excerpt">{p.excerpt}</p>
+                  <span className="blog-more">Read →</span>
+                </div>
               </Link>
             ))}
           </div>

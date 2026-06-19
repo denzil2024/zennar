@@ -37,7 +37,13 @@ export default function BlogPostPage() {
             <div className="post-meta">
               {formatDate(post.date)} · {post.readMins} min read
             </div>
-            <div className="rule" />
+            <div className="post-cover">
+              {post.cover ? (
+                <img src={post.cover} alt={post.title} />
+              ) : (
+                <span className="post-cover-ico">{post.icon}</span>
+              )}
+            </div>
             {post.body.map((b, i) =>
               b.type === 'h2' ? (
                 <h2 className="post-h2" key={i}>

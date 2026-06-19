@@ -10,6 +10,8 @@ export type Post = {
   category: string
   readMins: number
   excerpt: string
+  icon: string // emoji used in the branded placeholder cover until a real image is set
+  cover?: string // optional featured image path (e.g. '/blog/eco-fm.jpg'); falls back to placeholder
   body: PostBlock[]
 }
 
@@ -20,6 +22,7 @@ export const POSTS: Post[] = [
     date: '2026-05-12',
     category: 'Eco FM',
     readMins: 4,
+    icon: '💡',
     excerpt:
       'Eco-responsible facility management is not only good for the planet. It is one of the most reliable ways to lower the running costs of a building.',
     body: [
@@ -50,6 +53,7 @@ export const POSTS: Post[] = [
     date: '2026-04-28',
     category: 'Sustainability',
     readMins: 5,
+    icon: '🏆',
     excerpt:
       'Certification can feel like alphabet soup. Here is what the major green building standards actually measure and why they matter to property owners.',
     body: [
@@ -75,6 +79,7 @@ export const POSTS: Post[] = [
     date: '2026-04-10',
     category: 'Facility Management',
     readMins: 4,
+    icon: '🔧',
     excerpt:
       'Reactive repairs are expensive and disruptive. A structured preventive maintenance programme keeps buildings running and protects asset value.',
     body: [
