@@ -17,7 +17,7 @@ export default function Home() {
       <EcoStrip />
       <StatsBar />
       <Services count={6} />
-      <Portfolio />
+      <Portfolio viewAll />
       <EcoSection />
     </>
   )

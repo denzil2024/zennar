@@ -7,33 +7,37 @@ export default function Hero() {
       <div className="h-glow-g" />
       <div className="h-glow-e" />
       <div className="h-content">
-        <h1 className="h-wordmark">
-          ZENN<span>A</span>RA
-        </h1>
-        <div className="h-tag">
-          Property &amp; Facility Management · Nairobi, Kenya
-        </div>
+        <div className="h-ey">East Africa's Eco-Responsible FM Company</div>
         <span className="h-eco">
           <span className="eco-dot" />
-          <span className="h-eco-t">Eco Certified Operations</span>
+          <span className="h-eco-t">🌿 Green Certified Facility Management</span>
         </span>
+        <h1 className="h-title">
+          Premium Property
+          <br />
+          <strong>
+            &amp; <span className="eco">Eco Facility</span> Management
+          </strong>
+        </h1>
         <p className="h-desc">
-          East Africa's eco-responsible property and facility management
-          partner, delivering institutional-grade operations with a genuine
-          commitment to
-          sustainable, green buildings across Nairobi and beyond.
+          Institutional-grade property management and eco-responsible facility
+          services for Nairobi's most prestigious properties.
         </p>
         <div className="h-btns">
-          <Link className="btn-g" to="/services">
+          <Link className="btn-g" to="/portfolio">
+            View Portfolio
+          </Link>
+          <Link className="btn-e" to="/contact">
+            🌿 Free Eco Audit
+          </Link>
+          <Link className="btn-o" to="/services">
             Our Services
           </Link>
-          <Link className="btn-e" to="/eco">
-            Eco FM
-          </Link>
-          <Link className="btn-o" to="/portal">
-            Client Portal
-          </Link>
         </div>
+      </div>
+      <div className="h-scroll">
+        <span className="h-scroll-t">Scroll</span>
+        <span className="scroll-ln" />
       </div>
     </section>
   )

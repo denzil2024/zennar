@@ -15,8 +15,7 @@ export const NAV_LINKS: NavLinkItem[] = [
   { to: '/services', label: 'Services' },
   { to: '/portfolio', label: 'Portfolio' },
   { to: '/eco', label: 'Eco FM' },
-  { to: '/about', label: 'About' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/portal', label: 'Portal' },
 ]
 
 export const SERVICES: Service[] = [
@@ -58,6 +57,36 @@ export const VALUES: { label: string; eco: boolean }[] = [
   { label: 'Trust', eco: false },
   { label: 'Precision', eco: false },
   { label: 'Sustainability', eco: true },
+]
+
+// Client Portal preview content (dashboard mockup; real auth/data wired later)
+export const PORTAL_NAV: { ico: string; label: string; active?: boolean }[] = [
+  { ico: '📊', label: 'Overview', active: true },
+  { ico: '💰', label: 'Payments' },
+  { ico: '🔧', label: 'Maintenance' },
+  { ico: '🌿', label: 'Eco Reports' },
+  { ico: '📄', label: 'Documents' },
+]
+
+export const PORTAL_WIDGETS: {
+  label: string
+  value: string
+  sub: string
+  eco?: boolean
+}[] = [
+  { label: 'Next Payment', value: 'KES 480K', sub: 'Due: 1 June 2026' },
+  { label: 'Eco Score', value: 'A+', sub: '22% energy saved', eco: true },
+]
+
+export type Maintenance = {
+  status: 'open' | 'urgent' | 'done'
+  desc: string
+  date: string
+}
+export const MAINTENANCE: Maintenance[] = [
+  { status: 'open', desc: 'HVAC filter, Level 3', date: 'In progress' },
+  { status: 'urgent', desc: 'Water leak, Ground floor', date: 'Urgent' },
+  { status: 'done', desc: 'LED retrofit, Parking B1', date: '🌿 Done' },
 ]
 
 // Centralised site config (contact, WhatsApp). Swap in real values when supplied.

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ECO_PILLS } from '../../data/content'
 
 export default function EcoSection() {
@@ -20,6 +21,11 @@ export default function EcoSection() {
               {p}
             </div>
           ))}
+        </div>
+        <div style={{ marginTop: 36 }}>
+          <Link className="btn-e" to="/contact">
+            🌿 Book a Free Eco Audit
+          </Link>
         </div>
       </div>
     </section>

@@ -1,11 +1,15 @@
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { NAV_LINKS } from '../../data/content'
 
 export default function Nav() {
+  const [open, setOpen] = useState(false)
+  const close = () => setOpen(false)
+
   return (
     <nav className="nav">
       <div className="nl">
-        <Link to="/" className="wordmark">
+        <Link to="/" className="wordmark" onClick={close}>
           ZENN<span>A</span>RA
         </Link>
         <span className="eco-live">
@@ -13,19 +17,34 @@ export default function Nav() {
           <span className="eco-lt">Eco Certified</span>
         </span>
       </div>
-      <div className="nlinks">
+
+      <div className={`nlinks${open ? ' open' : ''}`}>
         {NAV_LINKS.map((l) => (
           <NavLink
             key={l.to}
             to={l.to}
+            onClick={close}
             className={({ isActive }) => (isActive ? 'on' : undefined)}
           >
             {l.label}
           </NavLink>
         ))}
-        <Link to="/portal" className="nav-cta">
-          Client Portal
+      </div>
+
+      <div className="nav-end">
+        <Link to="/contact" className="nav-cta" onClick={close}>
+          Get FM Quote
         </Link>
+        <button
+          className={`nav-toggle${open ? ' open' : ''}`}
+          aria-label="Toggle menu"
+          aria-expanded={open}
+          onClick={() => setOpen((o) => !o)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
     </nav>
   )

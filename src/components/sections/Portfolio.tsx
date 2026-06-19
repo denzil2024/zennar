@@ -1,18 +1,28 @@
+import { Link } from 'react-router-dom'
 import { PORTFOLIO } from '../../data/content'
 
-type Props = { background?: string }
+type Props = { background?: string; viewAll?: boolean }
 
-export default function Portfolio({ background }: Props) {
+export default function Portfolio({ background, viewAll }: Props) {
   return (
     <section
       id="portfolio"
       style={{ background: background ?? 'var(--zennara-charcoal)' }}
     >
       <div className="wrap">
-        <div className="sl">Managed Portfolio</div>
-        <h2 className="st">
-          Properties Under <em>Management</em>
-        </h2>
+        <div className="port-head">
+          <div>
+            <div className="sl">Managed Portfolio</div>
+            <h2 className="st">
+              Properties Under <em>Management</em>
+            </h2>
+          </div>
+          {viewAll && (
+            <Link className="view-all" to="/portfolio">
+              View All →
+            </Link>
+          )}
+        </div>
         <p className="ss">
           A selection of the commercial and residential properties we operate
           across Nairobi.

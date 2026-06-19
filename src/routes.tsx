@@ -6,7 +6,7 @@ import PortfolioPage from './pages/PortfolioPage'
 import EcoPage from './pages/EcoPage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
-import PortalLogin from './pages/portal/PortalLogin'
+import Portal from './pages/portal/Portal'
 
 export const routes: RouteRecord[] = [
   {
@@ -19,7 +19,7 @@ export const routes: RouteRecord[] = [
       { path: 'eco', Component: EcoPage },
       { path: 'about', Component: AboutPage },
       { path: 'contact', Component: ContactPage },
-      { path: 'portal', Component: PortalLogin },
+      { path: 'portal', Component: Portal },
     ],
   },
 ]
