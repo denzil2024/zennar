@@ -16,6 +16,7 @@ export const NAV_LINKS: NavLinkItem[] = [
   { to: '/services', label: 'Services' },
   { to: '/portfolio', label: 'Portfolio' },
   { to: '/eco', label: 'Eco FM' },
+  { to: '/blog', label: 'Insights' },
   { to: '/portal', label: 'Portal' },
 ]
 
