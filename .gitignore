@@ -24,6 +24,9 @@ docs/zennar-deck.html
 # Local visual-QA screenshots
 .shots/
 
+# Dropped WhatsApp reference images (not site assets)
+public/WhatsApp Image*
+
 # Editor / OS
 .vscode/*
 !.vscode/extensions.json
