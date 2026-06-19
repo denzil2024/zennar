@@ -7,6 +7,7 @@ export type Property = {
   nm: string
   addr: string
   badge: string
+  img?: string // optional photo path (e.g. '/properties/pinnacle.jpg'); falls back to placeholder tile
 }
 export type Stat = { n: string; l: string; eco: boolean }
 export type NavLinkItem = { to: string; label: string }
@@ -89,9 +90,19 @@ export const MAINTENANCE: Maintenance[] = [
   { status: 'done', desc: 'LED retrofit, Parking B1', date: '🌿 Done' },
 ]
 
-// Centralised site config (contact, WhatsApp). Swap in real values when supplied.
+// Centralised site config. Swap in real values when supplied (each is a one-line edit).
 export const SITE = {
+  url: 'https://zennara.co.ke', // canonical base; update when the real domain is confirmed
   whatsapp: '254700000000', // placeholder Nairobi number; replace with client's
   email: 'hello@zennara.co.ke',
+  phone: '+254700000000',
   city: 'Nairobi, Kenya',
+  ogImage: '', // set to e.g. '/og-image.jpg' (1200x630) once a share image is provided
+}
+
+// Brand assets. Leave blank to use the text/placeholder fallbacks; set the path
+// (file in /public) to swap in the real asset everywhere at once.
+export const ASSETS = {
+  logo: '', // e.g. '/logo.svg' (white/light version for the dark nav and footer)
+  heroImage: '', // e.g. '/hero.jpg' (large landscape building photo)
 }

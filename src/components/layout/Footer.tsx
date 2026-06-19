@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Logo from '../Logo'
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="ft-inner">
           <div>
             <div className="ft-wordmark">
-              ZENN<span>A</span>RA
+              <Logo />
             </div>
             <div className="ft-eco-b">
               <span className="eco-dot" />

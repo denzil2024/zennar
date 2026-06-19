@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { NAV_LINKS } from '../../data/content'
+import Logo from '../Logo'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -10,7 +11,7 @@ export default function Nav() {
     <nav className="nav">
       <div className="nl">
         <Link to="/" className="wordmark" onClick={close}>
-          ZENN<span>A</span>RA
+          <Logo />
         </Link>
         <span className="eco-live">
           <span className="eco-dot" />

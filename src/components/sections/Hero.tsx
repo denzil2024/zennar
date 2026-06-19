@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom'
+import { ASSETS } from '../../data/content'
 
 export default function Hero() {
   return (
     <section className="hero">
+      {ASSETS.heroImage && (
+        <div
+          className="h-photo"
+          style={{ backgroundImage: `url(${ASSETS.heroImage})` }}
+        />
+      )}
       <div className="h-grid" />
       <div className="h-glow-g" />
       <div className="h-glow-e" />

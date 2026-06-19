@@ -32,7 +32,11 @@ export default function Portfolio({ background, viewAll }: Props) {
           {PORTFOLIO.map((p) => (
             <div className="pc" key={p.nm}>
               <div className="pc-img">
-                <span>{p.ico}</span>
+                {p.img ? (
+                  <img className="pc-photo" src={p.img} alt={p.nm} loading="lazy" />
+                ) : (
+                  <span>{p.ico}</span>
+                )}
                 <span className="pc-badge">{p.badge}</span>
                 <span className="pc-eco">🌿</span>
               </div>
