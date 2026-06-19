@@ -8,7 +8,7 @@ export default function PortfolioPage() {
         title="Portfolio"
         description="A selection of the commercial and residential properties ZENNARA manages across Nairobi."
       />
-      <Portfolio background="var(--zennara-black)" />
+      <Portfolio background="var(--bg)" />
     </>
   )
 }

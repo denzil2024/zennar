@@ -8,7 +8,7 @@ export default function Portfolio({ background, viewAll }: Props) {
   return (
     <section
       id="portfolio"
-      style={{ background: background ?? 'var(--zennara-charcoal)' }}
+      style={{ background: background ?? 'var(--bg-alt)' }}
     >
       <div className="wrap">
         <Reveal>

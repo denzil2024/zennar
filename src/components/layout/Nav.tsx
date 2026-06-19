@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { NAV_LINKS } from '../../data/content'
 import Logo from '../Logo'
+import ThemeToggle from '../ThemeToggle'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -33,6 +34,7 @@ export default function Nav() {
       </div>
 
       <div className="nav-end">
+        <ThemeToggle />
         <Link to="/contact" className="nav-cta" onClick={close}>
           Get FM Quote
         </Link>

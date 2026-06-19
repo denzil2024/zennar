@@ -9,9 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: var(--zennara-black);
-  color: #fff;
+  background: var(--bg);
+  color: var(--text);
   font-family: var(--fb);
+  transition: background 0.3s ease, color 0.3s ease;
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
@@ -47,7 +48,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 900;
-  background: rgba(8, 8, 8, 0.92);
+  background: var(--nav-bg);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--zennara-bd);
   display: grid;
@@ -66,12 +67,33 @@ a {
   justify-self: end;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
+}
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--zennara-bd);
+  color: var(--text-soft);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.theme-toggle:hover {
+  color: var(--zennara-gold);
+  border-color: var(--zennara-gold);
+}
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
 }
 .wordmark {
   font: 700 27px/1 var(--fd);
   letter-spacing: 0.05em;
-  color: #fff;
+  color: var(--text);
 }
 .wordmark span {
   color: var(--zennara-gold);
@@ -112,7 +134,7 @@ a {
 .nlinks a {
   font: 600 13px/1 var(--fc);
   letter-spacing: 0.11em;
-  color: var(--zennara-lgrey);
+  color: var(--text-soft);
   text-transform: uppercase;
   transition: color 0.2s;
 }
@@ -169,7 +191,7 @@ section {
 .sl {
   font: 700 12px/1 var(--fc);
   letter-spacing: 0.3em;
-  color: var(--zennara-gold);
+  color: var(--gold-ink);
   text-transform: uppercase;
   margin-bottom: 18px;
 }
@@ -191,7 +213,7 @@ section {
 }
 .ss {
   font-size: 17px;
-  color: var(--zennara-lgrey);
+  color: var(--text-soft);
   line-height: 1.85;
   max-width: 640px;
 }
@@ -233,7 +255,7 @@ section {
 }
 .btn-o {
   border: 1px solid var(--zennara-bd);
-  color: var(--zennara-lgrey);
+  color: var(--text-soft);
   background: none;
   font-weight: 700;
 }
@@ -274,7 +296,7 @@ section {
 .epill {
   font: 600 11px/1 var(--fc);
   letter-spacing: 0.07em;
-  color: var(--zennara-eco-pale);
+  color: var(--eco-ink);
   display: flex;
   align-items: center;
   gap: 6px;
@@ -289,7 +311,7 @@ section {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: #060606;
+  background: var(--hero-bg);
   padding: 120px 24px 100px;
   text-align: center;
 }
@@ -399,7 +421,7 @@ section {
 .h-ey {
   font: 700 12px/1.5 var(--fc);
   letter-spacing: 0.2em;
-  color: var(--zennara-gold);
+  color: var(--gold-ink);
   text-transform: uppercase;
   animation: up 0.8s ease 0.1s both;
   margin-bottom: 18px;
@@ -407,7 +429,7 @@ section {
 .h-title {
   font: 300 clamp(40px, 6vw, 84px) / 1.06 var(--fd);
   letter-spacing: -0.01em;
-  color: #fff;
+  color: var(--text);
   animation: up 0.8s ease 0.44s both;
   margin-bottom: 22px;
   text-shadow: 0 0 48px rgba(201, 160, 48, 0.14);
@@ -436,7 +458,7 @@ section {
 }
 .h-desc {
   font-size: 18px;
-  color: var(--zennara-lgrey);
+  color: var(--text-soft);
   line-height: 1.92;
   max-width: 640px;
   margin: 0 auto 44px;
@@ -464,7 +486,7 @@ section {
 .h-scroll-t {
   font: 600 9px/1 var(--fc);
   letter-spacing: 0.22em;
-  color: var(--zennara-platinum);
+  color: var(--text-muted);
   text-transform: uppercase;
 }
 .scroll-ln {
@@ -499,7 +521,7 @@ section {
   padding: 0 36px;
 }
 .stat + .stat {
-  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 1px solid var(--border);
 }
 .stat-n {
   font: 300 clamp(46px, 5vw, 58px) / 1 var(--fd);
@@ -514,7 +536,7 @@ section {
   font: 500 11px/1.3 var(--fc);
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--zennara-platinum);
+  color: var(--text-muted);
   margin-top: 12px;
 }
 
@@ -526,8 +548,8 @@ section {
   margin-top: 56px;
 }
 .svc {
-  background: var(--zennara-card);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-top: 3px solid var(--zennara-gold);
   padding: 36px 32px;
   transition: 0.3s;
@@ -552,14 +574,14 @@ section {
   letter-spacing: 0.13em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: var(--zennara-gold);
+  color: var(--gold-ink);
 }
 .svc.eco .svc-t {
   color: var(--zennara-eco-l);
 }
 .svc-d {
   font-size: 15px;
-  color: var(--zennara-lgrey);
+  color: var(--text-soft);
   line-height: 1.78;
 }
 
@@ -571,8 +593,8 @@ section {
   margin-top: 56px;
 }
 .pc {
-  background: var(--zennara-charcoal);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
   overflow: hidden;
   transition: 0.3s;
 }
@@ -634,12 +656,12 @@ section {
 }
 .pc-addr {
   font-size: 13px;
-  color: var(--zennara-platinum);
+  color: var(--text-muted);
 }
 
 /* ── ECO COMMITMENT ──────────────────────────────────── */
 .eco-sec {
-  background: linear-gradient(135deg, #060c06, var(--zennara-black) 60%);
+  background: linear-gradient(135deg, rgba(45, 122, 79, 0.06), var(--bg) 60%);
 }
 
 /* ── WHATSAPP FLOATING BUTTON ────────────────────────── */
@@ -666,7 +688,7 @@ section {
 
 /* ── FOOTER ──────────────────────────────────────────── */
 .brand-ft {
-  background: var(--zennara-black);
+  background: var(--bg);
   border-top: 1px solid var(--zennara-bd);
   padding: 72px 0 32px;
 }
@@ -706,7 +728,7 @@ section {
 }
 .ft-desc {
   font-size: 13px;
-  color: var(--zennara-platinum);
+  color: var(--text-muted);
   line-height: 1.9;
   max-width: 340px;
 }
@@ -714,7 +736,7 @@ section {
   font: 800 11px/1 var(--fc);
   letter-spacing: 0.17em;
   text-transform: uppercase;
-  color: var(--zennara-gold);
+  color: var(--gold-ink);
   margin-bottom: 18px;
 }
 .ft-col-t.eco {
@@ -727,7 +749,7 @@ section {
 }
 .ft-links a {
   font-size: 13px;
-  color: var(--zennara-platinum);
+  color: var(--text-muted);
   transition: color 0.2s;
 }
 .ft-links a:hover {
@@ -740,7 +762,7 @@ section {
 .ft-copy {
   font: 400 12px/1.6 var(--fc);
   letter-spacing: 0.06em;
-  color: var(--zennara-platinum);
+  color: var(--text-muted);
 }
 
 /* ── RESPONSIVE ──────────────────────────────────────── */
@@ -767,7 +789,7 @@ section {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    background: rgba(8, 8, 8, 0.98);
+    background: var(--nav-bg-solid);
     border-bottom: 1px solid var(--zennara-bd);
     padding: 6px 24px 22px;
     transform: translateY(-12px);
@@ -783,7 +805,7 @@ section {
   .nlinks a {
     padding: 15px 0;
     font-size: 14px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--border);
   }
   .nav {
     display: flex;

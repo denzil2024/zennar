@@ -32,4 +32,36 @@
   --fd: 'Cormorant Garamond', serif; /* display / headlines / property names */
   --fc: 'Barlow Condensed', sans-serif; /* labels / nav / buttons / UI */
   --fb: 'Barlow', sans-serif; /* body */
+
+  /* Semantic theme tokens (DARK = default). Brand accents above stay fixed. */
+  --bg: #080808;
+  --bg-alt: #181818;
+  --surface: #222222;
+  --text: #ffffff;
+  --text-soft: #bbbbbb;
+  --text-muted: #888888;
+  --border: rgba(255, 255, 255, 0.06);
+  --hero-bg: #060606;
+  --nav-bg: rgba(8, 8, 8, 0.92);
+  --nav-bg-solid: rgba(8, 8, 8, 0.98);
+
+  /* Accent text colours that need to stay readable on either background */
+  --eco-ink: #a8d5b8; /* pale green, pops on dark */
+  --gold-ink: #c9a030; /* gold label text */
+}
+
+/* LIGHT theme: flips surfaces and text; gold and eco accents stay the same. */
+:root[data-theme='light'] {
+  --bg: #faf8f4;
+  --bg-alt: #f1efe9;
+  --surface: #ffffff;
+  --text: #14130f;
+  --text-soft: #4a4843;
+  --text-muted: #6b6862;
+  --border: rgba(0, 0, 0, 0.1);
+  --hero-bg: #faf8f4;
+  --nav-bg: rgba(250, 248, 244, 0.9);
+  --nav-bg-solid: rgba(250, 248, 244, 0.98);
+  --eco-ink: #1d5235; /* deep green, readable on light */
+  --gold-ink: #8a6a1c; /* darker gold, readable on light */
 }

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <script>
       document.documentElement.classList.add('js')
+      try {
+        if (localStorage.getItem('zennara-theme') === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light')
+        }
+      } catch (e) {}
     </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
