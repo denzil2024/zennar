@@ -6,6 +6,8 @@ import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
 import { pool } from './db.js'
+import authRoutes from './routes/auth.js'
+import adminRoutes from './routes/admin.js'
 
 const dir = path.dirname(fileURLToPath(import.meta.url))
 
@@ -36,7 +38,8 @@ app.get('/health/db', async (_req, res) => {
   }
 })
 
-// Auth + portal routes are added in the next steps.
+app.use('/api/auth', authRoutes)
+app.use('/api/admin', adminRoutes)
 
 const port = process.env.PORT || 8080
 
