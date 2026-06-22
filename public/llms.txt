@@ -5,13 +5,13 @@
 ZENNARA is a management and operations partner. It does not handle property sales or transactions. Its core differentiator is Eco FM: green-certified facility services covering energy efficiency, waste diversion, water management, and carbon reporting. A Client Portal gives clients access to payments, maintenance requests, eco reports, and documents.
 
 ## Pages
-- [Home](https://zennara.co.ke/): Overview, services, managed portfolio, and eco commitment.
-- [Services](https://zennara.co.ke/services): Full range of property and facility management services.
-- [Portfolio](https://zennara.co.ke/portfolio): Commercial and residential properties under management in Nairobi.
-- [Eco FM](https://zennara.co.ke/eco): Eco-responsible facility management, sustainability commitments, and green performance reporting.
-- [About](https://zennara.co.ke/about): Company background and values (Luxury, Trust, Precision, Sustainability).
-- [Insights](https://zennara.co.ke/blog): Articles on facility management, sustainability, and green building operations.
-- [Contact](https://zennara.co.ke/contact): Enquiries via WhatsApp, email, or form.
+- [Home](https://zennarafp.com/): Overview, services, managed portfolio, and eco commitment.
+- [Services](https://zennarafp.com/services): Full range of property and facility management services.
+- [Portfolio](https://zennarafp.com/portfolio): Commercial and residential properties under management in Nairobi.
+- [Eco FM](https://zennarafp.com/eco): Eco-responsible facility management, sustainability commitments, and green performance reporting.
+- [About](https://zennarafp.com/about): Company background and values (Luxury, Trust, Precision, Sustainability).
+- [Insights](https://zennarafp.com/blog): Articles on facility management, sustainability, and green building operations.
+- [Contact](https://zennarafp.com/contact): Enquiries via WhatsApp, email, or form.
 
 ## Services
 - Property Management: residential and commercial property management.
@@ -24,11 +24,11 @@ ZENNARA is a management and operations partner. It does not handle property sale
 - FM Consultancy: advisory on operations, efficiency, and sustainability strategy.
 
 ## Insights
-- [How Eco FM Reduces Building Operating Costs](https://zennara.co.ke/blog/how-eco-fm-reduces-operating-costs): How eco-responsible facility management lowers running costs through energy, water, and waste savings.
-- [Green Building Certification Explained](https://zennara.co.ke/blog/green-building-certification-explained): What the major green building standards measure and why they matter to property owners.
-- [A Practical Guide to Preventive Maintenance](https://zennara.co.ke/blog/practical-guide-to-preventive-maintenance): How a structured preventive maintenance programme protects asset value.
+- [How Eco FM Reduces Building Operating Costs](https://zennarafp.com/blog/how-eco-fm-reduces-operating-costs): How eco-responsible facility management lowers running costs through energy, water, and waste savings.
+- [Green Building Certification Explained](https://zennarafp.com/blog/green-building-certification-explained): What the major green building standards measure and why they matter to property owners.
+- [A Practical Guide to Preventive Maintenance](https://zennarafp.com/blog/practical-guide-to-preventive-maintenance): How a structured preventive maintenance programme protects asset value.
 
 ## Contact
 - Location: Nairobi, Kenya
-- Email: hello@zennara.co.ke
+- Email: hello@zennarafp.com
 - WhatsApp: +254 700 000 000 (placeholder; to be confirmed)

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /portal
 
-Sitemap: https://zennara.co.ke/sitemap.xml
+Sitemap: https://zennarafp.com/sitemap.xml
