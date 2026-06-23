@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
 import Portal from './pages/portal/Portal'
+import Admin from './pages/portal/Admin'
 import { POSTS } from './data/posts'
 
 export const routes: RouteRecord[] = [
@@ -29,6 +30,7 @@ export const routes: RouteRecord[] = [
         getStaticPaths: () => POSTS.map((p) => `/blog/${p.slug}`),
       },
       { path: 'portal', Component: Portal },
+      { path: 'portal/admin', Component: Admin },
     ],
   },
 ]

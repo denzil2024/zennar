@@ -8,6 +8,7 @@ import path from 'node:path'
 import { pool } from './db.js'
 import authRoutes from './routes/auth.js'
 import adminRoutes from './routes/admin.js'
+import portalRoutes from './routes/portal.js'
 
 const dir = path.dirname(fileURLToPath(import.meta.url))
 
@@ -40,6 +41,7 @@ app.get('/health/db', async (_req, res) => {
 
 app.use('/api/auth', authRoutes)
 app.use('/api/admin', adminRoutes)
+app.use('/api/portal', portalRoutes)
 
 const port = process.env.PORT || 8080
 

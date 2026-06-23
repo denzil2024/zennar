@@ -36,8 +36,9 @@ router.post(
     const wa = await sendWhatsApp(phone, msg)
 
     const body = { ok: true }
-    // Until ZENNARA's WhatsApp number is linked, return the code so login is testable.
-    if (!wa.sent) body.devCode = code
+    // Only expose the code for local testing (ALLOW_DEV_CODE=true). In production
+    // this stays off, so codes are never returned over the wire.
+    if (!wa.sent && process.env.ALLOW_DEV_CODE === 'true') body.devCode = code
     res.json(body)
   }),
 )
