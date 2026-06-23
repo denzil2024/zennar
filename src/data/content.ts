@@ -61,36 +61,6 @@ export const VALUES: { label: string; eco: boolean }[] = [
   { label: 'Sustainability', eco: true },
 ]
 
-// Client Portal preview content (dashboard mockup; real auth/data wired later)
-export const PORTAL_NAV: { ico: string; label: string; active?: boolean }[] = [
-  { ico: '📊', label: 'Overview', active: true },
-  { ico: '💰', label: 'Payments' },
-  { ico: '🔧', label: 'Maintenance' },
-  { ico: '🌿', label: 'Eco Reports' },
-  { ico: '📄', label: 'Documents' },
-]
-
-export const PORTAL_WIDGETS: {
-  label: string
-  value: string
-  sub: string
-  eco?: boolean
-}[] = [
-  { label: 'Next Payment', value: 'KES 480K', sub: 'Due: 1 June 2026' },
-  { label: 'Eco Score', value: 'A+', sub: '22% energy saved', eco: true },
-]
-
-export type Maintenance = {
-  status: 'open' | 'urgent' | 'done'
-  desc: string
-  date: string
-}
-export const MAINTENANCE: Maintenance[] = [
-  { status: 'open', desc: 'HVAC filter, Level 3', date: 'In progress' },
-  { status: 'urgent', desc: 'Water leak, Ground floor', date: 'Urgent' },
-  { status: 'done', desc: 'LED retrofit, Parking B1', date: '🌿 Done' },
-]
-
 // Centralised site config. Swap in real values when supplied (each is a one-line edit).
 export const SITE = {
   url: 'https://zennarafp.com', // canonical base; update when the real domain is confirmed
@@ -105,7 +75,7 @@ export const SITE = {
 // (file in /public) to swap in the real asset everywhere at once.
 export const ASSETS = {
   // Logo swaps by theme automatically. Leave both blank for the text fallback.
-  logoDark: '/zennara-nav-dark.svg', // shown in dark mode (icon + ZENNARA + ZEN F&P)
-  logoLight: '/zennara-nav-light.svg', // shown in light mode
+  logoDark: '/zennara-logo-dark.svg', // white house-icon wordmark (dark mode)
+  logoLight: '/zennara-logo-light.svg', // black house-icon wordmark (light mode)
   heroImage: '', // e.g. '/hero.jpg' (large landscape building photo)
 }
