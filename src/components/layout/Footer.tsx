@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="ft-inner">
           <div>
             <div className="ft-wordmark">
-              <Logo />
+              <Logo variant="mark" />
             </div>
             <div className="ft-eco-b">
               <span className="eco-dot" />

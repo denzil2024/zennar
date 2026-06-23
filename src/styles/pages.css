@@ -5,10 +5,10 @@
   color: var(--zennara-gold);
 }
 .nav-cta {
-  padding: 7px 16px;
+  padding: 9px 18px;
   background: var(--zennara-eco);
   color: #fff !important;
-  font: 800 9px/1 var(--fc);
+  font: 800 10px/1 var(--fc);
   letter-spacing: 0.13em;
   text-transform: uppercase;
   transition: 0.2s;

@@ -75,7 +75,12 @@ export const SITE = {
 // (file in /public) to swap in the real asset everywhere at once.
 export const ASSETS = {
   // Logo swaps by theme automatically. Leave both blank for the text fallback.
-  logoDark: '/zennara-logo-dark.svg', // white house-icon wordmark (dark mode)
-  logoLight: '/zennara-logo-light.svg', // black house-icon wordmark (light mode)
+  logoDark: '/zennara-logo-dark.svg', // full lockup, white (dark mode) - used in footer
+  logoLight: '/zennara-logo-light.svg', // full lockup, black (light mode) - used in footer
+  // Header variant: same wordmark with the baked-in tagline cropped off, so the
+  // header can show a small mark plus a separate, clearly readable HTML tagline.
+  wordmarkDark: '/zennara-wordmark-dark.svg',
+  wordmarkLight: '/zennara-wordmark-light.svg',
+  tagline: 'Property & Facility Management',
   heroImage: '', // e.g. '/hero.jpg' (large landscape building photo)
 }

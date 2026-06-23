@@ -12,7 +12,7 @@ export default function Nav() {
     <nav className="nav">
       <div className="nl">
         <Link to="/" className="wordmark" onClick={close}>
-          <Logo />
+          <Logo variant="mark" />
         </Link>
         <span className="eco-live">
           <span className="eco-dot" />
