@@ -306,8 +306,8 @@ section {
   flex-wrap: wrap;
 }
 .estrip-lbl {
-  font: 800 11px/1 var(--fc);
-  letter-spacing: 0.22em;
+  font: 700 10px/1 var(--fc);
+  letter-spacing: 0.16em;
   color: var(--zennara-eco-l);
   text-transform: uppercase;
   flex-shrink: 0;
