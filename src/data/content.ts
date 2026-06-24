@@ -54,11 +54,47 @@ export const ECO_PILLS: string[] = [
   '☀️ Solar-Ready Buildings',
 ]
 
-export const VALUES: { label: string; eco: boolean }[] = [
-  { label: 'Luxury', eco: false },
-  { label: 'Trust', eco: false },
-  { label: 'Precision', eco: false },
-  { label: 'Sustainability', eco: true },
+export const VALUES: { label: string; desc: string; eco: boolean }[] = [
+  {
+    label: 'Luxury',
+    desc: 'Premium standards in every detail, from concierge-grade service to immaculately kept common areas.',
+    eco: false,
+  },
+  {
+    label: 'Trust',
+    desc: 'Transparent reporting and accountable operations, so owners always know exactly where things stand.',
+    eco: false,
+  },
+  {
+    label: 'Precision',
+    desc: 'Disciplined, data-led processes that keep buildings running efficiently and predictably.',
+    eco: false,
+  },
+  {
+    label: 'Sustainability',
+    desc: 'Eco-responsible operations that cut consumption, cost, and carbon across the portfolio.',
+    eco: true,
+  },
+]
+
+// "Our approach" pillars on the About page.
+export const APPROACH: { t: string; d: string }[] = [
+  {
+    t: 'Institutional-grade operations',
+    d: 'The governance, SLAs, and reporting discipline usually reserved for the largest portfolios, applied to every property we manage.',
+  },
+  {
+    t: 'Eco-responsible by default',
+    d: 'Energy, water, waste, and procurement managed for measurable sustainability and lower running costs, not as an afterthought.',
+  },
+  {
+    t: 'Technology-enabled',
+    d: 'A client portal and live reporting give owners real-time visibility into payments, maintenance, and building performance.',
+  },
+  {
+    t: 'Proactive, not reactive',
+    d: 'Preventive maintenance and continuous optimisation that protect asset value and avoid costly surprises.',
+  },
 ]
 
 // Centralised site config. Swap in real values when supplied (each is a one-line edit).
@@ -84,3 +120,30 @@ export const ASSETS = {
   tagline: 'Property & Facility Management',
   heroImage: '', // optional photo behind the hero (kept clean for now)
 }
+
+// Leadership team. Optional fields render only when present, so we can ship the
+// cards now and drop in details as each director replies. `photo` -> headshot
+// at '/team/<name>.jpg' (else a styled initials avatar); `years` -> e.g. "12+
+// years"; `bio` -> 1-2 sentence bio; `linkedin` -> full profile URL.
+export const TEAM: {
+  name: string
+  role: string
+  photo?: string
+  years?: string
+  bio?: string
+  linkedin?: string
+}[] = [
+  { name: 'Laura Wright', role: 'Director' },
+  { name: 'Protus Nyamweya', role: 'Director' },
+  { name: 'Denzil Otieno', role: 'Technology & Procurement' },
+]
+
+// Certifications & memberships. PLACEHOLDERS - confirm/replace with the company's
+// actual accreditations and add `logo: '/certs/<file>.svg'` when logos arrive.
+export const CERTIFICATIONS: { name: string; logo?: string }[] = [
+  { name: 'ISO 9001 · Quality Management' },
+  { name: 'ISO 14001 · Environmental Management' },
+  { name: 'ISO 45001 · Health & Safety' },
+  { name: 'Green Building Certification' },
+  { name: 'Facilities Management Association' },
+]
