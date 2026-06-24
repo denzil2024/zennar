@@ -46,6 +46,19 @@ router.get(
   }),
 )
 
+// List website leads (newest first).
+router.get(
+  '/leads',
+  requireAdmin,
+  h(async (_req, res) => {
+    const { rows } = await query(
+      `SELECT id, property_type, location, size, phone, status, created_at
+       FROM leads ORDER BY created_at DESC LIMIT 100`,
+    )
+    res.json({ leads: rows })
+  }),
+)
+
 // Add a property for a client. Body: { clientId, name, area }.
 router.post(
   '/properties',

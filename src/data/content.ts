@@ -82,5 +82,5 @@ export const ASSETS = {
   wordmarkDark: '/zennara-wordmark-dark.svg',
   wordmarkLight: '/zennara-wordmark-light.svg',
   tagline: 'Property & Facility Management',
-  heroImage: '', // e.g. '/hero.jpg' (large landscape building photo)
+  heroImage: '', // optional photo behind the hero (kept clean for now)
 }

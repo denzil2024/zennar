@@ -17,7 +17,7 @@ try {
   process.exit(0)
 }
 
-const TARGET_DIRS = ['public/properties', 'public/blog']
+const TARGET_DIRS = ['public/properties', 'public/blog', 'public/hero']
 const MAX_WIDTH = 1600
 const SIZE_LIMIT = 350 * 1024 // already-small JPEGs are skipped
 

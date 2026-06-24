@@ -63,5 +63,5 @@
   --nav-bg: rgba(250, 248, 244, 0.9);
   --nav-bg-solid: rgba(250, 248, 244, 0.98);
   --eco-ink: #1d5235; /* deep green, readable on light */
-  --gold-ink: #8a6a1c; /* darker gold, readable on light */
+  --gold-ink: #7a5b14; /* darker gold, stronger contrast on light */
 }

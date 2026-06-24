@@ -79,6 +79,18 @@ CREATE TABLE IF NOT EXISTS documents (
   created_at  TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
+-- Inbound leads from the website "Get a Free Property Assessment" form.
+CREATE TABLE IF NOT EXISTS leads (
+  id            SERIAL PRIMARY KEY,
+  property_type TEXT,
+  location      TEXT,
+  size          TEXT,                          -- units / sq ft, free text
+  phone         TEXT NOT NULL,
+  source        TEXT NOT NULL DEFAULT 'website',
+  status        TEXT NOT NULL DEFAULT 'new',    -- new | contacted | closed
+  created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
 -- Eco / green performance reports.
 CREATE TABLE IF NOT EXISTS eco_reports (
   id                 SERIAL PRIMARY KEY,

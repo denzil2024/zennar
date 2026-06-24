@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ASSETS } from '../../data/content'
+import LeadForm from '../LeadForm'
 
 export default function Hero() {
   return (
@@ -13,38 +14,30 @@ export default function Hero() {
       <div className="h-grid" />
       <div className="h-glow-g" />
       <div className="h-glow-e" />
-      <div className="h-content">
-        <div className="h-ey">East Africa's Eco-Responsible FM Company</div>
+
+      <div className="h-content h-stack">
         <span className="h-eco">
           <span className="eco-dot" />
-          <span className="h-eco-t">🌿 Green Certified Facility Management</span>
+          <span className="h-eco-t">Green Certified Facility Management</span>
         </span>
         <h1 className="h-title">
-          Premium Property
+          Lower Operating Costs.
           <br />
-          <strong>
-            &amp; <span className="eco">Eco Facility</span> Management
-          </strong>
+          Better Tenant Experience.
+          <br />
+          <span className="eco">Measurable Sustainability.</span>
         </h1>
         <p className="h-desc">
-          Institutional-grade property management and eco-responsible facility
-          services for Nairobi's most prestigious properties.
+          Institutional-grade property and facility management that cuts
+          operating costs, elevates the tenant experience, and delivers
+          measurable sustainability across every market we serve.
         </p>
-        <div className="h-btns">
-          <Link className="btn-g" to="/portfolio">
-            View Portfolio
-          </Link>
-          <Link className="btn-e" to="/contact">
-            🌿 Free Eco Audit
-          </Link>
-          <Link className="btn-o" to="/services">
-            Our Services
-          </Link>
-        </div>
-      </div>
-      <div className="h-scroll">
-        <span className="h-scroll-t">Scroll</span>
-        <span className="scroll-ln" />
+
+        <LeadForm inline />
+
+        <Link className="h-altlink" to="/portfolio">
+          or view our work →
+        </Link>
       </div>
     </section>
   )

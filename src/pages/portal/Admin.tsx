@@ -5,7 +5,9 @@ import {
   setAdminToken,
   clearAdminToken,
   adminListClients,
+  adminListLeads,
   adminCreateClient,
+  type Lead,
   adminAddProperty,
   adminAddPayment,
   adminAddMaintenance,
@@ -30,13 +32,15 @@ export default function Admin() {
   const [authErr, setAuthErr] = useState<string | null>(null)
 
   const [clients, setClients] = useState<AdminClient[]>([])
+  const [leads, setLeads] = useState<Lead[]>([])
   const [selected, setSelected] = useState<AdminClient | null>(null)
   const [flash, setFlash] = useState<string | null>(null)
   const [err, setErr] = useState<string | null>(null)
 
   async function loadClients() {
-    const r = await adminListClients()
-    setClients(r.clients)
+    const [c, l] = await Promise.all([adminListClients(), adminListLeads()])
+    setClients(c.clients)
+    setLeads(l.leads)
   }
 
   useEffect(() => {
@@ -194,6 +198,33 @@ export default function Admin() {
               {(flash || err) && (
                 <p className={err ? 'p-err' : 'p-ok'}>{err || flash}</p>
               )}
+
+              <div className="p-widget p-wide" style={{ marginBottom: 18 }}>
+                <div className="pw-l">
+                  Website Leads ({leads.length})
+                </div>
+                <div className="m-list">
+                  {leads.length === 0 && (
+                    <div className="m-row">No leads yet.</div>
+                  )}
+                  {leads.map((l) => (
+                    <div className="m-row" key={l.id}>
+                      <span className="m-desc">
+                        <strong>{l.phone}</strong>
+                        {l.property_type ? ` · ${l.property_type}` : ''}
+                        {l.location ? ` · ${l.location}` : ''}
+                        {l.size ? ` · ${l.size}` : ''}
+                      </span>
+                      <span className="m-date">
+                        {new Date(l.created_at).toLocaleDateString('en-GB', {
+                          day: 'numeric',
+                          month: 'short',
+                        })}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
               <div className="admin-grid">
                 <aside className="p-side">

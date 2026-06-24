@@ -76,6 +76,14 @@ export const verifyCode = (phone: string, code: string) =>
 
 export const fetchDashboard = () => api<Dashboard>('/api/portal/dashboard', { auth: true })
 
+// Public website lead form ("Get a Free Property Assessment").
+export const submitLead = (lead: {
+  propertyType?: string
+  location?: string
+  size?: string
+  phone: string
+}) => api<{ ok: boolean; id: number }>('/api/leads', { method: 'POST', body: lead })
+
 export async function logout() {
   try {
     await api('/api/auth/logout', { method: 'POST', auth: true })
@@ -118,6 +126,17 @@ async function adminApi<T>(path: string, body?: unknown): Promise<T> {
 
 export const adminListClients = () =>
   adminApi<{ clients: AdminClient[] }>('/api/admin/clients')
+
+export type Lead = {
+  id: number
+  property_type: string | null
+  location: string | null
+  size: string | null
+  phone: string
+  status: string
+  created_at: string
+}
+export const adminListLeads = () => adminApi<{ leads: Lead[] }>('/api/admin/leads')
 export const adminCreateClient = (name: string, phone: string) =>
   adminApi<{ client: AdminClient }>('/api/admin/clients', { name, phone })
 export const adminAddProperty = (b: {
