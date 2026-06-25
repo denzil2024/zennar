@@ -931,6 +931,117 @@ button.p-item {
   line-height: 1.9;
   margin-bottom: 16px;
 }
+.post-h3 {
+  font: 400 21px/1.4 var(--fd);
+  color: var(--text);
+  margin: 30px 0 10px;
+}
+.post-ul {
+  margin: 0 0 18px;
+  padding-left: 22px;
+}
+.post-ul li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-soft);
+  margin-bottom: 8px;
+}
+.post-table-wrap {
+  overflow-x: auto;
+  margin: 10px 0 24px;
+}
+.post-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.post-table th,
+.post-table td {
+  text-align: left;
+  padding: 12px 14px;
+  border: 1px solid var(--zennara-bd);
+  vertical-align: top;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+.post-table th {
+  background: var(--bg-alt);
+  color: var(--text);
+  font: 700 12px/1.3 var(--fc);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.post-callout {
+  margin: 0 0 22px;
+  padding: 18px 20px;
+  border-left: 3px solid var(--zennara-eco-l);
+  background: var(--zennara-eco-glow);
+}
+.post-callout.caution {
+  border-left-color: var(--zennara-gold);
+  background: var(--zennara-gold-pale);
+}
+.post-callout-tag {
+  display: block;
+  font: 700 10px/1 var(--fc);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--eco-ink);
+  margin-bottom: 8px;
+}
+.post-callout.caution .post-callout-tag {
+  color: var(--gold-ink);
+}
+.post-callout-title {
+  display: block;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.post-callout p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-soft);
+}
+.post-p a,
+.post-callout a,
+.post-ul a {
+  color: var(--gold-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.post-p a:hover,
+.post-callout a:hover,
+.post-ul a:hover {
+  color: var(--zennara-gold);
+}
+.post-cta {
+  margin: 44px 0 8px;
+  padding: 36px;
+  border: 1px solid var(--zennara-bd);
+  background: linear-gradient(
+    160deg,
+    var(--zennara-gold-pale),
+    transparent 70%
+  );
+}
+.post-cta-title {
+  font: 400 28px/1.2 var(--fd);
+  color: var(--text);
+  margin: 0 0 12px;
+}
+.post-cta-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-soft);
+  max-width: 580px;
+  margin: 0 0 26px;
+}
 .post-back {
   margin-top: 40px;
 }

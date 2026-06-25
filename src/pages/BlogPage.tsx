@@ -17,7 +17,10 @@ export default function BlogPage() {
           </h2>
           <p className="ss">
             Practical thinking on facility management, sustainability, and green
-            building operations.
+            building operations, written for the people who own and run
+            commercial and mixed-use buildings. Each guide goes deeper than the
+            usual checklist, with real costs, honest comparisons, and a Kenyan
+            lens the global articles leave out.
           </p>
           <div className="rule" />
           <div className="blog-grid">
