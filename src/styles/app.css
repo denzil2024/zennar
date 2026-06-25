@@ -845,11 +845,25 @@ section {
   margin-top: 56px;
 }
 .svc {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   background: var(--surface);
   border: 1px solid var(--border);
   border-top: 3px solid var(--zennara-gold);
   padding: 36px 32px;
   transition: 0.3s;
+}
+.svc-more {
+  display: inline-block;
+  margin-top: 16px;
+  font: 600 11px/1 var(--fc);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+}
+.svc.eco .svc-more {
+  color: var(--eco-ink);
 }
 .svc.eco {
   border-top-color: var(--zennara-eco-l);

@@ -1,6 +1,14 @@
 // Static site content for ZENNARA. All content is code-managed (no CMS).
 
-export type Service = { ico: string; t: string; d: string; eco: boolean }
+export type Service = {
+  ico: string
+  t: string
+  d: string
+  eco: boolean
+  slug: string
+  long: string
+  features: string[]
+}
 export type Property = {
   ico: string
   dist: string
@@ -21,14 +29,118 @@ export const NAV_LINKS: NavLinkItem[] = [
 ]
 
 export const SERVICES: Service[] = [
-  { ico: '🏢', t: 'Property Management', d: 'Comprehensive residential and commercial property management.', eco: false },
-  { ico: '⚙️', t: 'Facility Management', d: 'Smart building operations, maintenance, and engineering.', eco: false },
-  { ico: '🌿', t: 'Eco FM Services', d: 'Green-certified cleaning, energy, and waste management.', eco: true },
-  { ico: '🔧', t: 'Building Maintenance', d: 'Preventive and reactive maintenance by certified contractors.', eco: false },
-  { ico: '🧹', t: 'Eco Cleaning', d: 'Eco-certified commercial and residential cleaning.', eco: true },
-  { ico: '🔒', t: 'Security Coordination', d: 'End-to-end security management across all properties.', eco: false },
-  { ico: '📋', t: 'Inspections', d: 'Scheduled condition surveys and compliance inspections.', eco: false },
-  { ico: '🧭', t: 'FM Consultancy', d: 'Advisory on operations, efficiency, and sustainability strategy.', eco: false },
+  {
+    ico: '🏢',
+    t: 'Property Management',
+    d: 'Comprehensive residential and commercial property management.',
+    eco: false,
+    slug: 'property-management',
+    long: 'End-to-end management of residential and commercial properties, covering tenant relations, rent and service-charge collection, budgeting, and compliance. We protect your asset value and income while taking the day-to-day off your plate.',
+    features: [
+      'Tenant relations and communications',
+      'Rent and service-charge collection',
+      'Budgeting and financial reporting',
+      'Statutory compliance and inspections',
+    ],
+  },
+  {
+    ico: '⚙️',
+    t: 'Facility Management',
+    d: 'Smart building operations, maintenance, and engineering.',
+    eco: false,
+    slug: 'facility-management',
+    long: 'Reliable building operations across mechanical, electrical, and engineering systems. We keep your building running efficiently, safely, and to standard, with planned maintenance and rapid response built in.',
+    features: [
+      'Mechanical and electrical operations',
+      'Planned preventive maintenance',
+      'Vendor and contractor management',
+      'Health, safety, and compliance',
+    ],
+  },
+  {
+    ico: '🌿',
+    t: 'Eco FM Services',
+    d: 'Green-certified cleaning, energy, and waste management.',
+    eco: true,
+    slug: 'eco-fm-services',
+    long: 'Our differentiator: facility management with sustainability built into daily operations. We actively manage energy, water, waste, and procurement to cut both your environmental footprint and your running costs, with ESG-ready reporting.',
+    features: [
+      'Energy and water optimisation',
+      'Waste diversion and recycling',
+      'Green procurement',
+      'Carbon and ESG reporting',
+    ],
+  },
+  {
+    ico: '🔧',
+    t: 'Building Maintenance',
+    d: 'Preventive and reactive maintenance by certified contractors.',
+    eco: false,
+    slug: 'building-maintenance',
+    long: 'Preventive and reactive maintenance delivered by vetted, certified contractors. We catch issues before they escalate and resolve faults fast, protecting asset value and keeping tenants satisfied.',
+    features: [
+      'Planned preventive maintenance',
+      '24/7 reactive repairs',
+      'Vetted, certified contractors',
+      'Asset condition tracking',
+    ],
+  },
+  {
+    ico: '🧹',
+    t: 'Eco Cleaning',
+    d: 'Eco-certified commercial and residential cleaning.',
+    eco: true,
+    slug: 'eco-cleaning',
+    long: 'Eco-certified cleaning for commercial and residential spaces, using low-impact products and methods that are safer for occupants and the environment, without compromising on standards.',
+    features: [
+      'Eco-certified products and methods',
+      'Commercial and residential',
+      'Trained, supervised teams',
+      'Scheduled and one-off services',
+    ],
+  },
+  {
+    ico: '🔒',
+    t: 'Security Coordination',
+    d: 'End-to-end security management across all properties.',
+    eco: false,
+    slug: 'security-coordination',
+    long: 'End-to-end coordination of security across your properties, from manned guarding and access control to surveillance and incident response, managed through a single point of accountability.',
+    features: [
+      'Manned guarding coordination',
+      'Access control and CCTV',
+      'Incident response protocols',
+      'Single point of accountability',
+    ],
+  },
+  {
+    ico: '📋',
+    t: 'Inspections',
+    d: 'Scheduled condition surveys and compliance inspections.',
+    eco: false,
+    slug: 'inspections',
+    long: 'Scheduled condition surveys and compliance inspections that keep your buildings safe, compliant, and well documented, with clear reports and prioritised action plans.',
+    features: [
+      'Condition surveys',
+      'Statutory compliance checks',
+      'Detailed reporting',
+      'Prioritised action plans',
+    ],
+  },
+  {
+    ico: '🧭',
+    t: 'FM Consultancy',
+    d: 'Advisory on operations, efficiency, and sustainability strategy.',
+    eco: false,
+    slug: 'fm-consultancy',
+    long: 'Advisory for owners and developers on operations, efficiency, and sustainability strategy. We help you set up the right operating model, reduce costs, and meet ESG goals, whether or not you engage us to deliver.',
+    features: [
+      'Operating model design',
+      'Cost and efficiency reviews',
+      'Sustainability strategy',
+      'Procurement and tendering support',
+    ],
+  },
 ]
 
 export const PORTFOLIO: Property[] = [

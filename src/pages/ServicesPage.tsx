@@ -1,3 +1,4 @@
+import { useParams } from 'react-router-dom'
 import Seo from '../components/Seo'
 import Services from '../components/sections/Services'
 import Onboarding from '../components/sections/Onboarding'
@@ -5,9 +6,13 @@ import WhySwitch from '../components/sections/WhySwitch'
 import TrustStrip from '../components/sections/TrustStrip'
 import FAQ from '../components/sections/FAQ'
 import CTA from '../components/sections/CTA'
+import ServiceModal from '../components/sections/ServiceModal'
 import EcoStrip from '../components/layout/EcoStrip'
+import { SERVICES } from '../data/content'
 
 export default function ServicesPage() {
+  const { slug } = useParams()
+  const service = slug ? SERVICES.find((s) => s.slug === slug) : null
   return (
     <>
       <Seo
@@ -24,6 +29,7 @@ export default function ServicesPage() {
       <TrustStrip />
       <FAQ />
       <CTA />
+      {service && <ServiceModal service={service} />}
     </>
   )
 }

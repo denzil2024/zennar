@@ -584,6 +584,89 @@ button.p-item {
   color: var(--text-soft);
 }
 
+/* service detail popup (route: /services/<slug>) */
+.svc-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(8, 8, 8, 0.74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  overflow-y: auto;
+  animation: fadein 0.2s ease;
+}
+.svc-modal-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--zennara-bd);
+  border-top: 3px solid var(--zennara-eco);
+  max-width: 560px;
+  width: 100%;
+  padding: 44px 44px 40px;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.55);
+  animation: up 0.3s ease;
+}
+.svc-modal-x {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font: 300 32px/1 var(--fc);
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.svc-modal-x:hover {
+  color: var(--text);
+}
+.svc-modal-ico {
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+.svc-modal-t {
+  font: 300 clamp(28px, 4vw, 38px) / 1.12 var(--fd);
+  color: var(--text);
+  margin: 6px 0 14px;
+}
+.svc-modal-d {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-soft);
+  margin-bottom: 26px;
+}
+.svc-modal-fl {
+  font: 700 11px/1 var(--fc);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+  margin-bottom: 8px;
+}
+.svc-modal-feat {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+.svc-modal-feat li {
+  position: relative;
+  padding: 10px 0 10px 26px;
+  font-size: 15px;
+  color: var(--text-soft);
+  border-bottom: 1px solid var(--border);
+}
+.svc-modal-feat li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: var(--eco-ink);
+  font-size: 13px;
+}
+.svc-modal-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 /* faq accordion */
 .faq-list {
   margin-top: 8px;
