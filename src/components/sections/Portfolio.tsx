@@ -27,7 +27,9 @@ export default function Portfolio({ background, viewAll }: Props) {
           </div>
           <p className="ss">
             A selection of the commercial and residential properties we operate
-            across our markets.
+            across our markets. From business parks and mixed-use developments
+            to residential communities, each is run to the same institutional
+            standard, with eco-responsible operations built in.
           </p>
           <div className="rule" />
           <div className="port-grid">

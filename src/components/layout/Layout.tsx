@@ -4,6 +4,7 @@ import Nav from './Nav'
 import Footer from './Footer'
 import WhatsAppButton from '../WhatsAppButton'
 import StickyCTA from '../StickyCTA'
+import ScrollToTop from '../ScrollToTop'
 
 export default function Layout() {
   // A successful render means we are on the fresh build; reset the one-shot
@@ -14,6 +15,7 @@ export default function Layout() {
 
   return (
     <>
+      <ScrollToTop />
       <Nav />
       <main>
         <Outlet />

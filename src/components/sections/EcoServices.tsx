@@ -9,8 +9,11 @@ export default function EcoServices() {
           Sustainability, <em>Operationalised</em>
         </h2>
         <p className="ss">
-          Green operations built into the day to day, with measurable savings
-          and reporting you can show stakeholders.
+          Green operations built into the day to day, not bolted on as an
+          afterthought. We actively manage energy, water, waste, and
+          procurement to cut both your footprint and your running costs, and
+          back every claim with measurable data and reporting you can show
+          stakeholders.
         </p>
         <div className="rule" />
         <div className="approach-grid">

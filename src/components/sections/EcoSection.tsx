@@ -13,8 +13,10 @@ export default function EcoSection() {
           </h2>
           <p className="ss">
             Sustainability is built into every building we operate, from energy
-            and water efficiency to waste diversion and carbon reporting. A live
-            eco data dashboard is on our roadmap.
+            and water efficiency to waste diversion, green procurement, and
+            carbon reporting. It lowers running costs as much as it lowers
+            impact, and gives owners ESG-ready evidence rather than vague green
+            claims. A live eco data dashboard is on our roadmap.
           </p>
           <div className="erule" />
           <div className="eco-pill-grid">
