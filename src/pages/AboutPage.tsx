@@ -1,6 +1,5 @@
 import Seo from '../components/Seo'
 import Team from '../components/sections/Team'
-import Certifications from '../components/sections/Certifications'
 import CTA from '../components/sections/CTA'
 import { VALUES, APPROACH } from '../data/content'
 
@@ -24,8 +23,8 @@ export default function AboutPage() {
             commitment to green building operations across the markets we serve.
           </p>
           <p className="ss" style={{ marginTop: 16 }}>
-            We operate as a management and operations partner, elevated with an
-            eco green ethos that signals sustainability, ESG readiness, and
+            We operate as a management and operations partner, distinguished by
+            an eco green ethos that signals sustainability, ESG readiness, and
             smart building management.
           </p>
           <div className="rule" />
@@ -65,7 +64,9 @@ export default function AboutPage() {
       </section>
 
       <Team />
-      <Certifications />
+      {/* Certifications held back until the real accreditations are confirmed
+          (avoid publishing unverified ISO/membership claims). Re-enable then. */}
+      {/* <Certifications /> */}
       <CTA />
     </>
   )

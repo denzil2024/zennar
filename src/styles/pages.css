@@ -44,31 +44,21 @@
 }
 
 /* about: value pillars */
+/* values: a light editorial row (not boxed cards) with column dividers */
 .pillars {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 11px;
-  margin-top: 26px;
+  gap: 0;
+  margin-top: 30px;
+  border-top: 1px solid var(--zennara-bd);
 }
 .pillar {
-  padding: 20px;
-  border: 1px solid var(--zennara-bd);
-  position: relative;
+  padding: 28px 28px 6px 28px;
+  border-left: 1px solid var(--zennara-bd);
 }
-.pillar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 100%;
-  background: var(--zennara-gold);
-}
-.pillar.ep {
-  border-color: var(--zennara-eco-b);
-}
-.pillar.ep::before {
-  background: var(--zennara-eco-l);
+.pillar:first-child {
+  border-left: none;
+  padding-left: 0;
 }
 .pn {
   font: 700 9px/1 var(--fc);
@@ -81,7 +71,7 @@
   color: var(--eco-ink);
 }
 .pv {
-  font: 400 21px/1 var(--fd);
+  font: 400 24px/1.1 var(--fd);
 }
 .pillar.ep .pv {
   color: var(--eco-ink);
@@ -440,25 +430,25 @@ button.p-item {
 .team-card {
   background: var(--surface);
   border: 1px solid var(--zennara-bd);
-  padding: 38px 28px;
+  border-top: 2px solid var(--zennara-eco);
+  padding: 30px 26px;
   text-align: center;
   transition: transform 0.3s, border-color 0.3s;
 }
 .team-card:hover {
   transform: translateY(-4px);
-  border-color: var(--zennara-eco-b);
 }
 .team-avatar {
-  width: 94px;
-  height: 94px;
-  margin: 0 auto 20px;
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 16px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, var(--zennara-eco-l), var(--zennara-eco-d));
   color: #fff;
-  font: 300 30px/1 var(--fd);
+  font: 400 25px/1 var(--fd);
   letter-spacing: 0.04em;
   overflow: hidden;
 }
@@ -752,6 +742,15 @@ button.p-item {
   .approach-grid,
   .blog-grid {
     grid-template-columns: 1fr;
+  }
+  .pillar {
+    border-left: none;
+    border-top: 1px solid var(--zennara-bd);
+    padding: 22px 0 6px;
+  }
+  .pillar:first-child {
+    border-top: none;
+    padding-top: 6px;
   }
   .port-head {
     flex-direction: column;
