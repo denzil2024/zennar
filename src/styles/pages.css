@@ -530,6 +530,103 @@ button.p-item {
   text-transform: uppercase;
   color: var(--text-soft);
 }
+
+/* onboarding steps (light, non-boxed) */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 8px;
+}
+.step-n {
+  font: 300 38px/1 var(--fd);
+  color: var(--gold-ink);
+  margin-bottom: 14px;
+}
+.step-t {
+  font: 700 13px/1.4 var(--fc);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.step-d {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-soft);
+}
+
+/* trust band */
+.trust-band {
+  background: var(--zennara-eco-glow);
+  border-top: 1px solid var(--zennara-eco-b);
+  border-bottom: 1px solid var(--zennara-eco-b);
+  padding: 42px 0;
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.trust-item {
+  text-align: center;
+}
+.trust-t {
+  font: 700 14px/1.3 var(--fc);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--eco-ink);
+  margin-bottom: 8px;
+}
+.trust-d {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+
+/* faq accordion */
+.faq-list {
+  margin-top: 8px;
+  max-width: 820px;
+}
+.faq-item {
+  border-bottom: 1px solid var(--zennara-bd);
+}
+.faq-q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  padding: 22px 0;
+  font: 500 17px/1.45 var(--fb);
+  color: var(--text);
+  transition: color 0.2s;
+}
+.faq-q:hover {
+  color: var(--eco-ink);
+}
+.faq-ic {
+  flex-shrink: 0;
+  font: 300 26px/1 var(--fc);
+  color: var(--eco-ink);
+  transition: transform 0.2s;
+}
+.faq-item.open .faq-ic {
+  transform: rotate(45deg);
+}
+.faq-a {
+  padding: 0 0 24px;
+  max-width: 720px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-soft);
+}
+
 @media (max-width: 800px) {
   .team-grid {
     grid-template-columns: 1fr;
@@ -538,6 +635,13 @@ button.p-item {
   }
   .cert-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .steps-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 

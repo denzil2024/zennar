@@ -5,6 +5,9 @@ import StatsBar from '../components/sections/StatsBar'
 import Services from '../components/sections/Services'
 import Portfolio from '../components/sections/Portfolio'
 import EcoSection from '../components/sections/EcoSection'
+import TrustStrip from '../components/sections/TrustStrip'
+import FAQ from '../components/sections/FAQ'
+import CTA from '../components/sections/CTA'
 import { SITE } from '../data/content'
 
 const LOCAL_BUSINESS = {
@@ -12,7 +15,7 @@ const LOCAL_BUSINESS = {
   '@type': 'ProfessionalService',
   name: 'ZENNARA Property & Facility Management',
   description:
-    "East Africa's eco-responsible property and facility management partner, delivering institutional-grade operations across Nairobi and beyond.",
+    "An eco-responsible property and facility management partner delivering institutional-grade operations across the markets we serve.",
   url: SITE.url,
   email: SITE.email,
   telephone: SITE.phone,
@@ -29,15 +32,18 @@ export default function Home() {
     <>
       <Seo
         title="ZENNARA Property & Facility Management"
-        description="East Africa's eco-responsible property and facility management partner, delivering institutional-grade operations across Nairobi and beyond."
+        description="An eco-responsible property and facility management partner delivering institutional-grade operations across the markets we serve."
         jsonLd={LOCAL_BUSINESS}
       />
       <Hero />
       <EcoStrip />
       <StatsBar />
       <Services count={6} />
+      <TrustStrip />
       <Portfolio viewAll />
       <EcoSection />
+      <FAQ />
+      <CTA />
     </>
   )
 }

@@ -27,7 +27,7 @@ export default function Portfolio({ background, viewAll }: Props) {
           </div>
           <p className="ss">
             A selection of the commercial and residential properties we operate
-            across Nairobi.
+            across our markets.
           </p>
           <div className="rule" />
           <div className="port-grid">

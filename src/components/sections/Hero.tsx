@@ -29,7 +29,7 @@ export default function Hero() {
         </h1>
         <p className="h-desc">
           Institutional-grade property and facility management that cuts
-          operating costs, elevates the tenant experience, and delivers
+          operating costs, improves the tenant experience, and delivers
           measurable sustainability across every market we serve.
         </p>
 

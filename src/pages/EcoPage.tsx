@@ -1,6 +1,8 @@
 import Seo from '../components/Seo'
 import EcoSection from '../components/sections/EcoSection'
+import EcoServices from '../components/sections/EcoServices'
 import StatsBar from '../components/sections/StatsBar'
+import CTA from '../components/sections/CTA'
 
 export default function EcoPage() {
   return (
@@ -10,7 +12,9 @@ export default function EcoPage() {
         description="ZENNARA's eco-responsible facility management: energy and water efficiency, waste diversion, green procurement, and carbon reporting."
       />
       <EcoSection />
+      <EcoServices />
       <StatsBar />
+      <CTA />
     </>
   )
 }

@@ -15,10 +15,9 @@ export default function Footer() {
               <span className="ft-eco-bt">Eco Certified</span>
             </div>
             <p className="ft-desc">
-              East Africa's foremost eco-responsible property and facility
-              management company, delivering institutional-grade service with a
-              commitment
-              to sustainability.
+              A premier eco-responsible property and facility management
+              company, delivering institutional-grade service with a genuine
+              commitment to sustainability across the markets we serve.
             </p>
           </div>
           <div>

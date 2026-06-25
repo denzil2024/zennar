@@ -7,7 +7,7 @@ export default function BlogPage() {
     <>
       <Seo
         title="Insights"
-        description="FM insights and eco news from ZENNARA: facility management, sustainability, and green building operations across Nairobi."
+        description="FM insights and eco news from ZENNARA: facility management, sustainability, and green building operations."
       />
       <section>
         <div className="wrap">
