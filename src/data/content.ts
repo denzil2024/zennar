@@ -213,7 +213,7 @@ export const APPROACH: { t: string; d: string }[] = [
 export const SITE = {
   url: 'https://zennarafp.com', // canonical base; update when the real domain is confirmed
   whatsapp: '254700000000', // placeholder Nairobi number; replace with client's
-  email: 'hello@zennarafp.com',
+  email: 'info@zennarafp.com',
   phone: '+254700000000',
   city: 'Nairobi, Kenya',
   ogImage: '', // set to e.g. '/og-image.jpg' (1200x630) once a share image is provided

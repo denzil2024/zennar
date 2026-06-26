@@ -1107,11 +1107,30 @@ section {
 .ft-bottom {
   border-top: 1px solid var(--zennara-bd);
   padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 .ft-copy {
   font: 400 12px/1.6 var(--fc);
   letter-spacing: 0.06em;
   color: var(--text-muted);
+}
+.ft-legal {
+  display: flex;
+  gap: 18px;
+}
+.ft-legal a {
+  font: 400 12px/1.6 var(--fc);
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.ft-legal a:hover {
+  color: var(--zennara-gold);
 }
 
 /* ── RESPONSIVE ──────────────────────────────────────── */

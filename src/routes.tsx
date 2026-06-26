@@ -9,6 +9,9 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
+import PrivacyPage from './pages/PrivacyPage'
+import TermsPage from './pages/TermsPage'
+import CookiePage from './pages/CookiePage'
 import Portal from './pages/portal/Portal'
 import Admin from './pages/portal/Admin'
 import { POSTS } from './data/posts'
@@ -37,6 +40,9 @@ export const routes: RouteRecord[] = [
         Component: BlogPostPage,
         getStaticPaths: () => POSTS.map((p) => `/blog/${p.slug}`),
       },
+      { path: 'privacy', Component: PrivacyPage },
+      { path: 'terms', Component: TermsPage },
+      { path: 'cookies', Component: CookiePage },
       { path: 'portal', Component: Portal },
       { path: 'portal/admin', Component: Admin },
     ],

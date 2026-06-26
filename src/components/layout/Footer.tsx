@@ -53,6 +53,11 @@ export default function Footer() {
             © {new Date().getFullYear()} ZENNARA Property &amp; Facility
             Management Ltd · All rights reserved · Nairobi, Kenya
           </p>
+          <div className="ft-legal">
+            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/terms">Terms of Service</Link>
+            <Link to="/cookies">Cookie Policy</Link>
+          </div>
         </div>
       </div>
     </footer>
