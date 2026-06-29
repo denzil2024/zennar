@@ -199,6 +199,13 @@ export const KPIS: { k: string; target: string; d: string }[] = [
   { k: 'OpEx Variance Control', target: '≤ ±3%', d: 'Actual building expenditure held tight to the agreed annual budget.' },
 ]
 
+// Structured owner reporting cadence, per the proposal's reporting framework.
+export const REPORTING: { when: string; t: string; d: string }[] = [
+  { when: 'Monthly', t: 'Financial Reporting', d: 'Delivered by the fifth business day: income and expenditure accounts, reconciled bank statements, an updated rent roll, an arrears summary, and service-charge balances.' },
+  { when: 'Quarterly', t: 'Operational Reviews', d: 'Building engineering performance, completed planned maintenance, vendor scorecards, compliance status, energy consumption analysis, and cost-optimisation recommendations.' },
+  { when: 'Annually', t: 'Strategic Asset Appraisals', d: 'Capital value trends, multi-year appreciation forecasting, a five-year CapEx plan, and strategic positioning advice for the local market.' },
+]
+
 export const ECO_PILLS: string[] = [
   '♻️ Waste Reduction',
   '💡 Energy Efficiency',

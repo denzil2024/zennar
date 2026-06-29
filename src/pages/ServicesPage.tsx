@@ -4,8 +4,10 @@ import Services from '../components/sections/Services'
 import Onboarding from '../components/sections/Onboarding'
 import WhySwitch from '../components/sections/WhySwitch'
 import KpiScorecard from '../components/sections/KpiScorecard'
+import ReportingCadence from '../components/sections/ReportingCadence'
 import TrustStrip from '../components/sections/TrustStrip'
 import FAQ from '../components/sections/FAQ'
+import RelatedInsights from '../components/sections/RelatedInsights'
 import CTA from '../components/sections/CTA'
 import ServiceModal from '../components/sections/ServiceModal'
 import EcoStrip from '../components/layout/EcoStrip'
@@ -28,8 +30,10 @@ export default function ServicesPage() {
       <Onboarding />
       <WhySwitch />
       <KpiScorecard />
+      <ReportingCadence />
       <TrustStrip />
       <FAQ />
+      <RelatedInsights />
       <CTA />
       {service && <ServiceModal service={service} />}
     </>

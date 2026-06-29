@@ -131,6 +131,11 @@
   line-height: 1.7;
   color: var(--text-soft);
 }
+.report-when {
+  font: 400 24px/1.1 var(--fd);
+  color: var(--gold-ink);
+  margin-bottom: 12px;
+}
 
 /* KPI benchmark scorecard (Services page) */
 .kpi-grid {
@@ -224,6 +229,36 @@
   line-height: 1.7;
   margin-top: auto;
 }
+.contact-cols {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  margin-top: 8px;
+  align-items: stretch;
+}
+.contact-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact-row {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.contact-row .cc-note {
+  margin-top: auto;
+}
+.cc-link {
+  color: var(--gold-ink);
+  font-size: 15px;
+  word-break: break-word;
+}
 .map-placeholder {
   margin-top: 22px;
   height: 260px;
@@ -243,6 +278,11 @@
     var(--bg-alt);
 }
 
+.map-divider {
+  height: 1px;
+  background: var(--zennara-bd);
+  margin: 44px 0 0;
+}
 .map-embed {
   margin-top: 22px;
   display: block;
@@ -1122,6 +1162,7 @@ button.p-item {
 @media (max-width: 800px) {
   .pillars,
   .contact-grid,
+  .contact-cols,
   .portal-app,
   .p-main,
   .approach-grid,

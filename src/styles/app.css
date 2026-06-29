@@ -836,6 +836,15 @@ section {
   color: var(--text-muted);
   margin-top: 12px;
 }
+.stats-note {
+  text-align: center;
+  margin: 14px auto 0;
+  padding: 0 24px;
+  font: 500 11px/1.5 var(--fc);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
 
 /* ── SERVICES ────────────────────────────────────────── */
 .svc-grid {

@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import type { ReactNode } from 'react'
 import Seo from '../components/Seo'
 import { getPost, formatDate } from '../data/posts'
+import { SITE } from '../data/content'
 
 // Renders inline **bold** and [label](href) markers within post text.
 // Links starting with "/" become in-app <Link>s; others open in a new tab.
@@ -51,9 +52,28 @@ export default function BlogPostPage() {
     )
   }
 
+  const articleLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Organization',
+      name: 'ZENNARA Property & Facility Management',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'ZENNARA Property & Facility Management',
+    },
+    mainEntityOfPage: `${SITE.url}/blog/${post.slug}`,
+    ...(post.cover ? { image: `${SITE.url}${post.cover}` } : {}),
+  }
+
   return (
     <>
-      <Seo title={post.title} description={post.excerpt} />
+      <Seo title={post.title} description={post.excerpt} jsonLd={articleLd} />
       <section>
         <div className="wrap">
           <article className="post-article">

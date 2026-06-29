@@ -1,4 +1,5 @@
 import Seo from '../components/Seo'
+import LeadForm from '../components/LeadForm'
 import { SITE } from '../data/content'
 
 export default function ContactPage() {
@@ -16,31 +17,36 @@ export default function ContactPage() {
             Contact <em>ZENNARA</em>
           </h2>
           <p className="ss">
-            Speak with our team about managing your property or facility. We
-            respond fastest on WhatsApp.
+            Speak with our team about managing your property, building, or
+            portfolio. Share a few details using the form and a specialist will
+            respond within one business hour, or reach us directly on WhatsApp.
           </p>
           <div className="rule" />
-          <div className="contact-grid">
-            <div className="contact-card">
-              <div className="cc-lbl">WhatsApp</div>
-              <a className="btn-e" href={waLink} target="_blank" rel="noreferrer">
-                Chat on WhatsApp
-              </a>
-              <p className="cc-note">Live chat for client and tenant enquiries.</p>
-            </div>
-            <div className="contact-card">
-              <div className="cc-lbl">Email</div>
-              <a className="btn-o" href={`mailto:${SITE.email}`}>
-                {SITE.email}
-              </a>
-              <p className="cc-note">For proposals and partnership enquiries.</p>
-            </div>
-            <div className="contact-card">
-              <div className="cc-lbl eco">Office</div>
-              <div className="cc-text">{SITE.address}</div>
-              <p className="cc-note">{SITE.city}</p>
+          <div className="contact-cols">
+            <LeadForm />
+            <div className="contact-aside">
+              <div className="contact-row">
+                <div className="cc-lbl">WhatsApp</div>
+                <a className="btn-e" href={waLink} target="_blank" rel="noreferrer">
+                  Chat on WhatsApp
+                </a>
+                <p className="cc-note">Live chat for client and tenant enquiries.</p>
+              </div>
+              <div className="contact-row">
+                <div className="cc-lbl">Email</div>
+                <a className="cc-link" href={`mailto:${SITE.email}`}>
+                  {SITE.email}
+                </a>
+                <p className="cc-note">For proposals and partnership enquiries.</p>
+              </div>
+              <div className="contact-row">
+                <div className="cc-lbl eco">Office</div>
+                <div className="cc-text">{SITE.address}</div>
+                <p className="cc-note">{SITE.city}</p>
+              </div>
             </div>
           </div>
+          <div className="map-divider" />
           <iframe
             className="map-embed"
             title="ZENNARA office location"
