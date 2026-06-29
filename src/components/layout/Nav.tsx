@@ -16,7 +16,7 @@ export default function Nav() {
         </Link>
         <span className="eco-live">
           <span className="eco-dot" />
-          <span className="eco-lt">Eco Certified</span>
+          <span className="eco-lt">Eco-Responsible</span>
         </span>
       </div>
 

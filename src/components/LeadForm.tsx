@@ -47,8 +47,8 @@ export default function LeadForm({ inline = false }: { inline?: boolean }) {
         <div className="lead-tick">✓</div>
         <h3 className="lead-title">Request received</h3>
         <p className="lead-sub" style={{ border: 'none', padding: 0 }}>
-          Thank you. A specialist will reach out within 2 hours with your free
-          property assessment.
+          Thank you. A specialist will reach out within one business hour with
+          your free property assessment.
         </p>
       </div>
     )
@@ -73,7 +73,7 @@ export default function LeadForm({ inline = false }: { inline?: boolean }) {
   return (
     <form className="lead-card" onSubmit={onSubmit}>
       <h3 className="lead-title">Get a Free Property Assessment</h3>
-      <p className="lead-sub">No obligation. A specialist responds within 2 hours.</p>
+      <p className="lead-sub">No obligation. A specialist responds within one business hour.</p>
 
       <span className="lead-lbl">Property type</span>
       <Select name="propertyType" options={PROPERTY_TYPES} placeholder="Select type" />

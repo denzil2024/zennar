@@ -18,6 +18,7 @@ export default function Onboarding() {
             <div className="step-card" key={s.t}>
               <div className="step-n">0{i + 1}</div>
               <div className="step-t">{s.t}</div>
+              <div className="step-when">{s.when}</div>
               <div className="step-d">{s.d}</div>
             </div>
           ))}

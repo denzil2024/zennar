@@ -10,7 +10,7 @@ type Props = {
 // Reusable closing call-to-action band.
 export default function CTA({
   title = "Let's talk about your property.",
-  text = 'Book a consultation or request a free property assessment, and we will get back to you within 2 hours.',
+  text = 'Book a consultation or request a free property assessment, and we will get back to you within one business hour.',
   primary = { label: 'Book Consultation', to: '/contact' },
   secondary = { label: 'Free Property Assessment', to: '/' },
 }: Props) {

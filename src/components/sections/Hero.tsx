@@ -18,19 +18,19 @@ export default function Hero() {
       <div className="h-content h-stack">
         <span className="h-eco">
           <span className="eco-dot" />
-          <span className="h-eco-t">Green Certified Facility Management</span>
+          <span className="h-eco-t">Institutional-Grade Asset Management</span>
         </span>
         <h1 className="h-title">
-          Lower Operating Costs.
+          Protect Capital Value.
           <br />
-          Better Tenant Experience.
+          Cut Operating Costs.
           <br />
-          <span className="eco">Measurable Sustainability.</span>
+          <span className="eco">Maximize Yield.</span>
         </h1>
         <p className="h-desc">
-          Institutional-grade property and facility management that cuts
-          operating costs, improves the tenant experience, and delivers
-          measurable sustainability across every market we serve.
+          Institutional-grade property and facility management engineered to
+          protect capital value, cut operating costs, and maximize yield, with
+          sustainability built in across every market we serve.
         </p>
 
         <LeadForm inline />

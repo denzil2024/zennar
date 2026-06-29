@@ -1,4 +1,5 @@
 import Seo from '../components/Seo'
+import AssetClasses from '../components/sections/AssetClasses'
 import Portfolio from '../components/sections/Portfolio'
 import TrustStrip from '../components/sections/TrustStrip'
 import CTA from '../components/sections/CTA'
@@ -10,6 +11,7 @@ export default function PortfolioPage() {
         title="Portfolio"
         description="A selection of the commercial and residential properties ZENNARA manages across our markets."
       />
+      <AssetClasses />
       <Portfolio background="var(--bg)" />
       <TrustStrip />
       <CTA />

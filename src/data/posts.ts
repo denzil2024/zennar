@@ -1711,7 +1711,7 @@ export const POSTS: Post[] = [
       {
         type: 'cta',
         title: 'Work With ZENNARA',
-        text: 'ZENNARA delivers institutional-grade, eco-responsible facility maintenance with transparent reporting and a live client portal. Book a consultation or request a free property assessment, and a specialist will respond within two hours.',
+        text: 'ZENNARA delivers institutional-grade, eco-responsible facility maintenance with transparent reporting and a live client portal. Book a consultation or request a free property assessment, and a specialist will respond within one business hour.',
         buttonLabel: 'Book a Consultation',
         to: '/contact',
       },

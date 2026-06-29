@@ -1,5 +1,6 @@
 import Seo from '../components/Seo'
 import Team from '../components/sections/Team'
+import Certifications from '../components/sections/Certifications'
 import CTA from '../components/sections/CTA'
 import { VALUES, APPROACH } from '../data/content'
 
@@ -64,9 +65,7 @@ export default function AboutPage() {
       </section>
 
       <Team />
-      {/* Certifications held back until the real accreditations are confirmed
-          (avoid publishing unverified ISO/membership claims). Re-enable then. */}
-      {/* <Certifications /> */}
+      <Certifications />
       <CTA />
     </>
   )

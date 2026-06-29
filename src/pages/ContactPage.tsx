@@ -37,13 +37,20 @@ export default function ContactPage() {
             </div>
             <div className="contact-card">
               <div className="cc-lbl eco">Office</div>
-              <div className="cc-text">{SITE.city}</div>
-              <p className="cc-note">
-                Google Maps location embed coming in a later milestone.
-              </p>
+              <div className="cc-text">{SITE.address}</div>
+              <p className="cc-note">{SITE.city}</p>
             </div>
           </div>
-          <div className="map-placeholder">Google Map · Nairobi (to be embedded)</div>
+          <iframe
+            className="map-embed"
+            title="ZENNARA office location"
+            src={`https://maps.google.com/maps?q=${encodeURIComponent(
+              `${SITE.address}, ${SITE.city}`,
+            )}&z=15&output=embed`}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
         </div>
       </section>
     </>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from '../Logo'
+import { SITE } from '../../data/content'
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
             </div>
             <div className="ft-eco-b">
               <span className="eco-dot" />
-              <span className="ft-eco-bt">Eco Certified</span>
+              <span className="ft-eco-bt">Eco-Responsible</span>
             </div>
             <p className="ft-desc">
               A premier eco-responsible property and facility management
@@ -44,7 +45,9 @@ export default function Footer() {
             <div className="ft-links">
               <Link to="/portal">Client Portal</Link>
               <Link to="/contact">WhatsApp</Link>
-              <Link to="/contact">Nairobi, Kenya</Link>
+              <a href={SITE.social.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href={SITE.social.twitter} target="_blank" rel="noreferrer">Twitter</a>
+              <a href={SITE.social.facebook} target="_blank" rel="noreferrer">Facebook</a>
             </div>
           </div>
         </div>

@@ -37,8 +37,8 @@ export const SERVICES: Service[] = [
     slug: 'property-management',
     long: 'End-to-end management of residential and commercial properties, covering tenant relations, rent and service-charge collection, budgeting, and compliance. We protect your asset value and income while taking the day-to-day off your plate.',
     features: [
+      'Rent collection and arrears management, 98%+ efficiency',
       'Tenant relations and communications',
-      'Rent and service-charge collection',
       'Budgeting and financial reporting',
       'Statutory compliance and inspections',
     ],
@@ -63,7 +63,7 @@ export const SERVICES: Service[] = [
     d: 'Green-certified cleaning, energy, and waste management.',
     eco: true,
     slug: 'eco-fm-services',
-    long: 'Our differentiator: facility management with sustainability built into daily operations. We actively manage energy, water, waste, and procurement to cut both your environmental footprint and your running costs, with ESG-ready reporting.',
+    long: 'Facility management with sustainability built into daily operations. We actively manage energy, water, waste, and procurement to cut both your environmental footprint and your running costs, with ESG-ready reporting.',
     features: [
       'Energy and water optimisation',
       'Waste diversion and recycling',
@@ -149,11 +149,54 @@ export const PORTFOLIO: Property[] = [
   { ico: '🌿', dist: 'Eco Showcase', nm: 'Karen Eco Business Hub', addr: '📍 Karen', badge: 'Eco Hub', img: '/properties/karen-eco-business-hub.jpg' },
 ]
 
+// Asset classes we specialise in. Each property type carries a distinct
+// operational focus, per the corporate proposal's specialisation divisions.
+export const ASSET_CLASSES: { t: string; d: string; focus: string }[] = [
+  {
+    t: 'Commercial Grade-A Towers',
+    d: 'Premium multi-tenant offices, corporate headquarters, and high-rise commercial centres.',
+    focus: 'HVAC and elevator uptime, multi-layered security, corporate lease escalation.',
+  },
+  {
+    t: 'Mixed-Use Developments',
+    d: 'High-end retail, residential apartments, and lifestyle centres within a single integrated asset.',
+    focus: 'Service-charge allocation, Sectional Property alignment, multi-traffic zoning.',
+  },
+  {
+    t: 'Residential Estates & Gated Communities',
+    d: 'Premium apartment blocks, townhouses, and expansive master-planned gated enclaves.',
+    focus: 'Community governance, utility reliability, tenant onboarding, common-area harmony.',
+  },
+  {
+    t: 'Industrial & Logistics Parks',
+    d: 'Warehouses, cold-storage centres, assembly plants, and specialised manufacturing parks.',
+    focus: 'Structural fabric endurance, drainage, heavy power security, high-load paving.',
+  },
+  {
+    t: 'Institutional Facilities',
+    d: 'Educational centres, banks, multi-branch portfolios, and corporate real estate networks.',
+    focus: 'Regulatory compliance, rapid multi-site deployment, rigid budget alignment.',
+  },
+]
+
 export const STATS: Stat[] = [
-  { n: '500+', l: 'Properties Managed', eco: false },
-  { n: '98%', l: 'Client Retention', eco: false },
-  { n: '78%', l: 'Waste Diverted', eco: true },
-  { n: '22%', l: 'Energy Saved', eco: true },
+  { n: '98.5%', l: 'Rent Collection', eco: false },
+  { n: '95%+', l: 'Occupancy', eco: false },
+  { n: '99.7%', l: 'Plant Uptime', eco: false },
+  { n: '90%+', l: 'Tenant Satisfaction', eco: true },
+]
+
+// Key performance indicators we report against every quarter, per the
+// corporate proposal's KPI benchmark table.
+export const KPIS: { k: string; target: string; d: string }[] = [
+  { k: 'Rent Collection Efficiency', target: '≥ 98.5%', d: 'Actual rent collected against total invoiced, measured by the 10th of each month.' },
+  { k: 'Asset Occupancy Rate', target: '≥ 95%', d: 'Lettable area under active lease against the total net lettable area.' },
+  { k: 'Technical Emergency Response', target: '≤ 15 min', d: 'From a critical emergency being logged to a technician on site.' },
+  { k: 'Routine Maintenance Resolution', target: '≤ 24 hrs', d: 'Full resolution and closure of standard, non-emergency repair tickets.' },
+  { k: 'Critical Plant Uptime', target: '≥ 99.7%', d: 'Uninterrupted availability of lifts and generators across each quarter.' },
+  { k: 'Tenant Satisfaction', target: '≥ 90%', d: 'Aggregated from post-ticket reviews and biannual satisfaction surveys.' },
+  { k: 'Lease Renewal Rate', target: '≥ 85%', d: 'Expiring leases renewed rather than vacated.' },
+  { k: 'OpEx Variance Control', target: '≤ ±3%', d: 'Actual building expenditure held tight to the agreed annual budget.' },
 ]
 
 export const ECO_PILLS: string[] = [
@@ -168,23 +211,33 @@ export const ECO_PILLS: string[] = [
 
 export const VALUES: { label: string; desc: string; eco: boolean }[] = [
   {
-    label: 'Luxury',
-    desc: 'Premium standards in every detail, from concierge-grade service to immaculately kept common areas.',
+    label: 'Institutional Integrity',
+    desc: 'Complete accuracy in every financial dealing, owner disclosure, and procurement decision, with zero tolerance for kickbacks or hidden margins.',
     eco: false,
   },
   {
-    label: 'Trust',
-    desc: 'Transparent reporting and accountable operations, so owners always know exactly where things stand.',
+    label: 'Professional Excellence',
+    desc: 'Certified technical specialists who treat asset management as an engineering and corporate discipline, never as generalist caretaking.',
     eco: false,
   },
   {
-    label: 'Precision',
-    desc: 'Disciplined, data-led processes that keep buildings running efficiently and predictably.',
+    label: 'Radical Transparency',
+    desc: 'Real-time owner access to financial tracking, rent collection, and maintenance dashboards, around the clock and on demand.',
     eco: false,
   },
   {
-    label: 'Sustainability',
-    desc: 'Eco-responsible operations that cut consumption, cost, and carbon across the portfolio.',
+    label: 'Agile Innovation',
+    desc: 'Cloud-based PropTech, predictive analytics, and automated portals in place of the slow, paper-based methods of conventional managers.',
+    eco: false,
+  },
+  {
+    label: 'Fiduciary Accountability',
+    desc: 'Every shilling of rental income and service charge treated as an investment fund to be optimised and strictly accounted for.',
+    eco: false,
+  },
+  {
+    label: 'Environmental Stewardship',
+    desc: 'Operations structured to cut energy draw, curb carbon, and run sustainable waste systems across every building we manage.',
     eco: true,
   },
 ]
@@ -201,11 +254,11 @@ export const APPROACH: { t: string; d: string }[] = [
   },
   {
     t: 'Technology-enabled',
-    d: 'A client portal and live reporting give owners real-time visibility into payments, maintenance, and building performance.',
+    d: 'An Executive Owner Dashboard and live tenant portal give owners real-time visibility into rent collection, arrears, occupancy, and maintenance, with IoT sub-metering tracking utilities to the cent.',
   },
   {
     t: 'Proactive, not reactive',
-    d: 'Preventive maintenance and continuous optimisation that protect asset value and avoid costly surprises.',
+    d: 'A 52-week planned preventive maintenance schedule and 3-to-5-year CapEx forecasting protect asset value and turn unpredictable failures into budgeted, controlled events.',
   },
 ]
 
@@ -216,6 +269,12 @@ export const SITE = {
   email: 'info@zennarafp.com',
   phone: '+254700000000',
   city: 'Nairobi, Kenya',
+  address: 'The Landmark Corporate Suites, 7th Floor, Mombasa Road / Westlands, Nairobi',
+  social: {
+    linkedin: 'https://www.linkedin.com/company/zennarafp',
+    twitter: 'https://twitter.com/ZennaraFP',
+    facebook: 'https://www.facebook.com/ZennaraFP',
+  },
   ogImage: '', // set to e.g. '/og-image.jpg' (1200x630) once a share image is provided
 }
 
@@ -250,34 +309,38 @@ export const TEAM: {
   { name: 'Denzil Otieno', role: 'Technology & Procurement' },
 ]
 
-// Certifications & memberships. PLACEHOLDERS - confirm/replace with the company's
-// actual accreditations and add `logo: '/certs/<file>.svg'` when logos arrive.
+// Professional accreditations & memberships held by ZENNARA's management team,
+// per the corporate proposal. Drop the official logo files into /public/certs
+// (see /public/certs/README.txt for exact filenames); missing logos fall back
+// to the badge icon automatically.
 export const CERTIFICATIONS: { name: string; logo?: string }[] = [
-  { name: 'ISO 9001 · Quality Management' },
-  { name: 'ISO 14001 · Environmental Management' },
-  { name: 'ISO 45001 · Health & Safety' },
-  { name: 'Green Building Certification' },
-  { name: 'Facilities Management Association' },
+  { name: 'Estate Agents Registration Board (EARB)', logo: '/certs/earb.png' },
+  { name: 'Valuers Registration Board (VRB)', logo: '/certs/vrb.png' },
+  { name: 'Institution of Surveyors of Kenya (ISK)', logo: '/certs/isk.png' },
+  { name: 'BIFM / IFMA Certified Facility Managers', logo: '/certs/ifma.svg' },
+  { name: 'CPA-K Financial Directors', logo: '/certs/ICPAK-Logo-on-White.svg' },
+  { name: 'Sectional Properties Act (2020) Compliant', logo: '/certs/properties_act.png' },
 ]
 
 // Conversion / trust content.
 export const GUARANTEES: { t: string; d: string }[] = [
-  { t: '2-hour response', d: 'Every enquiry and request answered within two hours.' },
+  { t: 'Rapid response', d: 'Critical emergencies on site within 15 minutes. Urgent repairs within two hours.' },
   { t: 'Transparent pricing', d: 'Clear scope and costs upfront. No surprise invoices.' },
   { t: 'Service guarantee', d: 'Agreed SLAs, measured and reported every month.' },
 ]
 
-export const ONBOARDING: { t: string; d: string }[] = [
-  { t: 'Free assessment', d: 'We walk your property, review current costs and pain points, and share a clear plan with transparent pricing. No obligation, no jargon.' },
-  { t: 'Transition plan', d: 'We coordinate a structured handover from your current provider, so there is no gap in service, staffing, or accountability during the switch.' },
-  { t: 'Mobilisation', d: 'Teams, suppliers, SLAs, and reporting are put in place and your client portal goes live, typically within two to four weeks of sign-off.' },
-  { t: 'Ongoing optimisation', d: 'We run the property proactively, with preventive maintenance and continuous improvement, and report performance to you every month.' },
+export const ONBOARDING: { t: string; when: string; d: string }[] = [
+  { t: 'Audit & assessment', when: 'Weeks 1 & 2', d: 'We inspect every major plant system and review your rent roll, deposits, utility history, and arrears, documenting the exact technical and financial state of the property before takeover.' },
+  { t: 'Systems & data migration', when: 'Week 3', d: 'We migrate tenant data, leases, and balances onto our platform, tag every asset, open dedicated escrow accounts, and build your 52-week preventive maintenance schedule.' },
+  { t: 'Tenant launch', when: 'Week 4', d: 'We introduce the management team to your tenants with welcome packs, portal onboarding, emergency contacts, and clear new payment details, with townhalls for larger assets.' },
+  { t: 'Full management', when: 'Month 2 onward', d: 'We assume full daily control: planned maintenance runs, vendor scorecards begin, the owner dashboard goes live, and energy optimisation starts cutting operating costs.' },
 ]
 
 export const WHY_SWITCH: { t: string; d: string }[] = [
-  { t: 'Lower operating costs', d: 'We audit energy, procurement, and maintenance, then remove the waste that quietly inflates your bills. Most owners see running costs fall, not rise, after switching.' },
-  { t: 'Real transparency', d: 'A live client portal and clear monthly reporting replace vague updates and surprise invoices. You always know what was done, what it cost, and what is next.' },
-  { t: 'Faster response', d: 'Every request is logged, tracked, and resolved against agreed SLAs, with a response within two hours. No more chasing your provider for days.' },
+  { t: 'Predictable rental income', d: 'Automated billing, dedicated escrow collection accounts, and structured arrears follow-up keep collection efficiency above 98%. Your rent is collected on time and reconciled to you on a fixed monthly schedule.' },
+  { t: 'Lower operating costs', d: 'We audit energy, procurement, and maintenance, then remove the waste that quietly inflates your bills. Owners often see running costs fall, not rise, after switching.' },
+  { t: 'Real transparency', d: 'An Executive Owner Dashboard gives you real-time collection rates, arrears, and occupancy from any device, with reconciled financial reports by the fifth business day each month. No vague updates, no surprise invoices.' },
+  { t: 'Faster response', d: 'Every request is logged, tracked, and resolved against agreed SLAs: critical emergencies on site within 15 minutes, urgent repairs within two hours, standard requests within 24. No more chasing your provider for days.' },
   { t: 'Measurable sustainability', d: 'We manage energy, water, and waste for real savings and report the results in an ESG-ready format. Sustainability you can prove to owners and tenants, not just claim.' },
 ]
 

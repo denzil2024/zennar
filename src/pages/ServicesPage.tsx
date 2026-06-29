@@ -3,6 +3,7 @@ import Seo from '../components/Seo'
 import Services from '../components/sections/Services'
 import Onboarding from '../components/sections/Onboarding'
 import WhySwitch from '../components/sections/WhySwitch'
+import KpiScorecard from '../components/sections/KpiScorecard'
 import TrustStrip from '../components/sections/TrustStrip'
 import FAQ from '../components/sections/FAQ'
 import CTA from '../components/sections/CTA'
@@ -21,11 +22,12 @@ export default function ServicesPage() {
       />
       <Services
         title="Our"
-        subtitle="ZENNARA delivers institutional-grade property and facility management, with our Eco FM service line as a core differentiator."
+        subtitle="ZENNARA delivers institutional-grade property and facility management, built on integrated in-house operations, a real-time Executive Owner Dashboard, and disciplined rent collection that holds efficiency above 98%."
       />
       <EcoStrip />
       <Onboarding />
       <WhySwitch />
+      <KpiScorecard />
       <TrustStrip />
       <FAQ />
       <CTA />

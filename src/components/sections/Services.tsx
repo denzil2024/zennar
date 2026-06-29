@@ -12,7 +12,7 @@ type Props = {
 export default function Services({
   count,
   title = 'Management',
-  subtitle = 'A full spectrum of property and facility management, led by our eco-responsible Eco FM service line. From day-to-day operations and maintenance to sustainability, security, and reporting, we run buildings to a higher standard while keeping running costs down.',
+  subtitle = 'A full spectrum of property and facility management, built on integrated in-house operations and a real-time technology platform. From day-to-day operations and maintenance to sustainability, security, and reporting, we run buildings to a higher standard while keeping running costs down.',
   background,
 }: Props) {
   const items = count ? SERVICES.slice(0, count) : SERVICES
